@@ -1,0 +1,24 @@
+# PlanAhead Generated physical constraints 
+
+NET "sim_o_led_rv" LOC = G15;
+NET "sim_o_led_ro" LOC = F15;
+NET "sim_o_led_rr" LOC = E16;
+NET "sim_o_led_cv" LOC = D16;
+NET "sim_o_led_co" LOC = D15;
+NET "sim_o_led_cr" LOC = E15;
+NET "clk" LOC = T9;
+NET "rst" LOC = L14;
+NET "i_presence" LOC = M13;
+
+NET "sim_o_validate[0]" LOC = D14;
+NET "sim_o_validate[1]" LOC = G14;
+NET "sim_o_validate[2]" LOC = F14;
+NET "sim_o_validate[3]" LOC = E13;
+
+NET "sim_o_display[0]"  LOC = E14  ;  
+NET "sim_o_display[1]"  LOC = G13  ;  
+NET "sim_o_display[2]"  LOC = N15  ;   
+NET "sim_o_display[3]"  LOC = P15  ;  
+NET "sim_o_display[4]"  LOC = R16  ;  
+NET "sim_o_display[5]"  LOC = F13  ;  
+NET "sim_o_display[6]"  LOC = N16  ;  

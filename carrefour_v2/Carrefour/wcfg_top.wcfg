@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/orcad/Carrefour/tb_top_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="numeric_std" />
+            <top_module name="std_logic_1164" />
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="13" />
+   <wvobject fp_name="/tb_top/clk" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/rst" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/i_presence" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">i_presence</obj_property>
+      <obj_property name="ObjectShortName">i_presence</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/sim_o_led_rr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_o_led_rr</obj_property>
+      <obj_property name="ObjectShortName">sim_o_led_rr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/sim_o_led_ro" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_o_led_ro</obj_property>
+      <obj_property name="ObjectShortName">sim_o_led_ro</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/sim_o_led_rv" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_o_led_rv</obj_property>
+      <obj_property name="ObjectShortName">sim_o_led_rv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/sim_o_led_cr" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_o_led_cr</obj_property>
+      <obj_property name="ObjectShortName">sim_o_led_cr</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/sim_o_led_co" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_o_led_co</obj_property>
+      <obj_property name="ObjectShortName">sim_o_led_co</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/sim_o_led_cv" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_o_led_cv</obj_property>
+      <obj_property name="ObjectShortName">sim_o_led_cv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/sim_o_display" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_o_display[7:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_o_display[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/sim_o_validate" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">sim_o_validate[3:0]</obj_property>
+      <obj_property name="ObjectShortName">sim_o_validate[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/nb_display" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">nb_display</obj_property>
+      <obj_property name="ObjectShortName">nb_display</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/clock_half_period" type="other" db_ref_id="1">
+      <obj_property name="ElementShortName">clock_half_period</obj_property>
+      <obj_property name="ObjectShortName">clock_half_period</obj_property>
+   </wvobject>
+</wave_config>

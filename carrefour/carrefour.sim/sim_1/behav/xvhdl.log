@@ -1,0 +1,16 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/carrefour/carrefour.srcs/sources_1/new/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/carrefour/carrefour.srcs/sources_1/new/deco.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity deco
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter_sec
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/carrefour/carrefour.srcs/sources_1/new/counter_1s.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter_1s
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/carrefour/carrefour.srcs/sources_1/new/control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity control
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity operative
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/carrefour/carrefour.srcs/sources_1/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/carrefour/carrefour.srcs/sim_1/new/tb_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_top

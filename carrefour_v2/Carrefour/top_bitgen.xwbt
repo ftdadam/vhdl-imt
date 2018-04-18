@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\orcad\Carrefour\top.ncd
+OUTFILE=C:\Users\orcad\Carrefour\top.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=C:\Users\orcad\Carrefour
+LICENSE=ISE
+USER_INFO=210967703_174171490_210672013_604

@@ -1,0 +1,50 @@
+V3 27
+FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/control.vhd 2018/04/18.10:02:02 P.20131013
+EN work/control 1524045154 \
+      FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/control.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/control/Behavioral 1524045155 \
+      FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/control.vhd \
+      EN work/control 1524045154
+FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/counter_1s.vhd 2018/04/18.11:38:22 P.20131013
+EN work/counter_1s 1524045144 \
+      FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/counter_1s.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/counter_1s/Behavioral 1524045145 \
+      FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/counter_1s.vhd \
+      EN work/counter_1s 1524045144
+FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd 2018/04/17.21:57:04 P.20131013
+EN work/counter_sec 1524045146 \
+      FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/counter_sec/Behavioral 1524045147 \
+      FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd \
+      EN work/counter_sec 1524045146
+FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/deco.vhd 2018/04/18.11:44:51 P.20131013
+EN work/deco 1524045150 \
+      FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/deco.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/deco/Behavioral 1524045151 \
+      FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/deco.vhd \
+      EN work/deco 1524045150
+FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/mux.vhd 2018/04/18.10:15:30 P.20131013
+EN work/mux 1524045148 \
+      FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/mux.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/mux/Behavioral 1524045149 \
+      FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/mux.vhd \
+      EN work/mux 1524045148
+FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/operative.vhd 2018/04/18.11:52:14 P.20131013
+EN work/operative 1524045152 \
+      FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/operative.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/operative/Behavioral 1524045153 \
+      FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/operative.vhd \
+      EN work/operative 1524045152 CP counter_1s CP counter_sec CP mux CP deco
+FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/top.vhd 2018/04/18.10:32:40 P.20131013
+EN work/top 1524045156 \
+      FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/top.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181
+AR work/top/Behavioral 1524045157 \
+      FL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/top.vhd \
+      EN work/top 1524045156 CP operative CP control

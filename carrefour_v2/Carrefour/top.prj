@@ -1,0 +1,7 @@
+vhdl work "../Downloads/carrefour/carrefour.srcs/sources_1/new/mux.vhd"
+vhdl work "../Downloads/carrefour/carrefour.srcs/sources_1/new/deco.vhd"
+vhdl work "../Downloads/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd"
+vhdl work "../Downloads/carrefour/carrefour.srcs/sources_1/new/counter_1s.vhd"
+vhdl work "../Downloads/carrefour/carrefour.srcs/sources_1/new/operative.vhd"
+vhdl work "../Downloads/carrefour/carrefour.srcs/sources_1/new/control.vhd"
+vhdl work "../Downloads/carrefour/carrefour.srcs/sources_1/new/top.vhd"

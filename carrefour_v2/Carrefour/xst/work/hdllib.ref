@@ -1,0 +1,14 @@
+AR mux behavioral C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/mux.vhd sub00/vhpl05 1524045149
+AR counter_1s behavioral C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/counter_1s.vhd sub00/vhpl01 1524045145
+EN counter_sec NULL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd sub00/vhpl02 1524045146
+AR counter_sec behavioral C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd sub00/vhpl03 1524045147
+EN top NULL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/top.vhd sub00/vhpl12 1524045156
+EN counter_1s NULL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/counter_1s.vhd sub00/vhpl00 1524045144
+AR deco behavioral C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/deco.vhd sub00/vhpl07 1524045151
+EN control NULL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/control.vhd sub00/vhpl10 1524045154
+EN mux NULL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/mux.vhd sub00/vhpl04 1524045148
+EN operative NULL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/operative.vhd sub00/vhpl08 1524045152
+AR control behavioral C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/control.vhd sub00/vhpl11 1524045155
+AR top behavioral C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/top.vhd sub00/vhpl13 1524045157
+AR operative behavioral C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/operative.vhd sub00/vhpl09 1524045153
+EN deco NULL C:/Users/orcad/Downloads/carrefour/carrefour.srcs/sources_1/new/deco.vhd sub00/vhpl06 1524045150

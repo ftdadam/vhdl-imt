@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="4613162606fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="9" />
+   <wvobject fp_name="group64" type="group">
+      <obj_property name="label">top</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/i_presence" type="logic">
+         <obj_property name="ElementShortName">i_presence</obj_property>
+         <obj_property name="ObjectShortName">i_presence</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/sim_o_led_rr" type="logic">
+         <obj_property name="ElementShortName">sim_o_led_rr</obj_property>
+         <obj_property name="ObjectShortName">sim_o_led_rr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/sim_o_led_ro" type="logic">
+         <obj_property name="ElementShortName">sim_o_led_ro</obj_property>
+         <obj_property name="ObjectShortName">sim_o_led_ro</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/sim_o_led_rv" type="logic">
+         <obj_property name="ElementShortName">sim_o_led_rv</obj_property>
+         <obj_property name="ObjectShortName">sim_o_led_rv</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/sim_o_led_cr" type="logic">
+         <obj_property name="ElementShortName">sim_o_led_cr</obj_property>
+         <obj_property name="ObjectShortName">sim_o_led_cr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/sim_o_led_co" type="logic">
+         <obj_property name="ElementShortName">sim_o_led_co</obj_property>
+         <obj_property name="ObjectShortName">sim_o_led_co</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/sim_o_led_cv" type="logic">
+         <obj_property name="ElementShortName">sim_o_led_cv</obj_property>
+         <obj_property name="ObjectShortName">sim_o_led_cv</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/sim_o_display" type="array">
+         <obj_property name="ElementShortName">sim_o_display[7:0]</obj_property>
+         <obj_property name="ObjectShortName">sim_o_display[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/sim_o_validate" type="logic">
+         <obj_property name="ElementShortName">sim_o_validate</obj_property>
+         <obj_property name="ObjectShortName">sim_o_validate</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group110" type="group">
+      <obj_property name="label">counter_9s</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_9s/enb" type="logic">
+         <obj_property name="ElementShortName">enb</obj_property>
+         <obj_property name="ObjectShortName">enb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_9s/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_9s/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_9s/i_init" type="logic">
+         <obj_property name="ElementShortName">i_init</obj_property>
+         <obj_property name="ObjectShortName">i_init</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_9s/i_init_value" type="array">
+         <obj_property name="ElementShortName">i_init_value[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i_init_value[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_9s/o_endcount" type="logic">
+         <obj_property name="ElementShortName">o_endcount</obj_property>
+         <obj_property name="ObjectShortName">o_endcount</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_9s/o_count" type="array">
+         <obj_property name="ElementShortName">o_count[3:0]</obj_property>
+         <obj_property name="ObjectShortName">o_count[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_9s/counter_reg" type="array">
+         <obj_property name="ElementShortName">counter_reg[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_reg[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_9s/G_SIZE" type="other">
+         <obj_property name="ElementShortName">G_SIZE</obj_property>
+         <obj_property name="ObjectShortName">G_SIZE</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group120" type="group">
+      <obj_property name="label">counter_4s</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_4s/enb" type="logic">
+         <obj_property name="ElementShortName">enb</obj_property>
+         <obj_property name="ObjectShortName">enb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_4s/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_4s/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_4s/i_init" type="logic">
+         <obj_property name="ElementShortName">i_init</obj_property>
+         <obj_property name="ObjectShortName">i_init</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_4s/i_init_value" type="array">
+         <obj_property name="ElementShortName">i_init_value[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i_init_value[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_4s/o_endcount" type="logic">
+         <obj_property name="ElementShortName">o_endcount</obj_property>
+         <obj_property name="ObjectShortName">o_endcount</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_4s/o_count" type="array">
+         <obj_property name="ElementShortName">o_count[3:0]</obj_property>
+         <obj_property name="ObjectShortName">o_count[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_4s/counter_reg" type="array">
+         <obj_property name="ElementShortName">counter_reg[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_reg[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_4s/G_SIZE" type="other">
+         <obj_property name="ElementShortName">G_SIZE</obj_property>
+         <obj_property name="ObjectShortName">G_SIZE</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group63" type="group">
+      <obj_property name="label">counter_7s</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_7s/enb" type="logic">
+         <obj_property name="ElementShortName">enb</obj_property>
+         <obj_property name="ObjectShortName">enb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_7s/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_7s/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_7s/i_init" type="logic">
+         <obj_property name="ElementShortName">i_init</obj_property>
+         <obj_property name="ObjectShortName">i_init</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_7s/i_init_value" type="array">
+         <obj_property name="ElementShortName">i_init_value[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i_init_value[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_7s/o_endcount" type="logic">
+         <obj_property name="ElementShortName">o_endcount</obj_property>
+         <obj_property name="ObjectShortName">o_endcount</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_7s/o_count" type="array">
+         <obj_property name="ElementShortName">o_count[3:0]</obj_property>
+         <obj_property name="ObjectShortName">o_count[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_7s/counter_reg" type="array">
+         <obj_property name="ElementShortName">counter_reg[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_reg[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_7s/G_SIZE" type="other">
+         <obj_property name="ElementShortName">G_SIZE</obj_property>
+         <obj_property name="ObjectShortName">G_SIZE</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group130" type="group">
+      <obj_property name="label">counter_2s</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_2s/enb" type="logic">
+         <obj_property name="ElementShortName">enb</obj_property>
+         <obj_property name="ObjectShortName">enb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_2s/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_2s/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_2s/i_init" type="logic">
+         <obj_property name="ElementShortName">i_init</obj_property>
+         <obj_property name="ObjectShortName">i_init</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_2s/i_init_value" type="array">
+         <obj_property name="ElementShortName">i_init_value[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i_init_value[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_2s/o_endcount" type="logic">
+         <obj_property name="ElementShortName">o_endcount</obj_property>
+         <obj_property name="ObjectShortName">o_endcount</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_2s/o_count" type="array">
+         <obj_property name="ElementShortName">o_count[3:0]</obj_property>
+         <obj_property name="ObjectShortName">o_count[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_2s/counter_reg" type="array">
+         <obj_property name="ElementShortName">counter_reg[3:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_reg[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_2s/G_SIZE" type="other">
+         <obj_property name="ElementShortName">G_SIZE</obj_property>
+         <obj_property name="ObjectShortName">G_SIZE</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group89" type="group">
+      <obj_property name="label">control</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/u_top/u_control/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/i_fsecu" type="logic">
+         <obj_property name="ElementShortName">i_fsecu</obj_property>
+         <obj_property name="ObjectShortName">i_fsecu</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/i_frv" type="logic">
+         <obj_property name="ElementShortName">i_frv</obj_property>
+         <obj_property name="ObjectShortName">i_frv</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/i_fro" type="logic">
+         <obj_property name="ElementShortName">i_fro</obj_property>
+         <obj_property name="ObjectShortName">i_fro</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/i_fcv" type="logic">
+         <obj_property name="ElementShortName">i_fcv</obj_property>
+         <obj_property name="ObjectShortName">i_fcv</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/i_presence" type="logic">
+         <obj_property name="ElementShortName">i_presence</obj_property>
+         <obj_property name="ObjectShortName">i_presence</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/o_enb_secu" type="logic">
+         <obj_property name="ElementShortName">o_enb_secu</obj_property>
+         <obj_property name="ObjectShortName">o_enb_secu</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/o_enb_lrv" type="logic">
+         <obj_property name="ElementShortName">o_enb_lrv</obj_property>
+         <obj_property name="ObjectShortName">o_enb_lrv</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/o_enb_lro" type="logic">
+         <obj_property name="ElementShortName">o_enb_lro</obj_property>
+         <obj_property name="ObjectShortName">o_enb_lro</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/o_enb_lcv" type="logic">
+         <obj_property name="ElementShortName">o_enb_lcv</obj_property>
+         <obj_property name="ObjectShortName">o_enb_lcv</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/o_led_rr" type="logic">
+         <obj_property name="ElementShortName">o_led_rr</obj_property>
+         <obj_property name="ObjectShortName">o_led_rr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/o_led_ro" type="logic">
+         <obj_property name="ElementShortName">o_led_ro</obj_property>
+         <obj_property name="ObjectShortName">o_led_ro</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/o_led_rv" type="logic">
+         <obj_property name="ElementShortName">o_led_rv</obj_property>
+         <obj_property name="ObjectShortName">o_led_rv</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/o_led_cr" type="logic">
+         <obj_property name="ElementShortName">o_led_cr</obj_property>
+         <obj_property name="ObjectShortName">o_led_cr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/o_led_co" type="logic">
+         <obj_property name="ElementShortName">o_led_co</obj_property>
+         <obj_property name="ObjectShortName">o_led_co</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/o_led_cv" type="logic">
+         <obj_property name="ElementShortName">o_led_cv</obj_property>
+         <obj_property name="ObjectShortName">o_led_cv</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/s_present" type="other">
+         <obj_property name="ElementShortName">s_present</obj_property>
+         <obj_property name="ObjectShortName">s_present</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/s_future" type="other">
+         <obj_property name="ElementShortName">s_future</obj_property>
+         <obj_property name="ObjectShortName">s_future</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/s_tl_r" type="array">
+         <obj_property name="ElementShortName">s_tl_r[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s_tl_r[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/s_tl_c" type="array">
+         <obj_property name="ElementShortName">s_tl_c[2:0]</obj_property>
+         <obj_property name="ObjectShortName">s_tl_c[2:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_control/s_enbs" type="array">
+         <obj_property name="ElementShortName">s_enbs[3:0]</obj_property>
+         <obj_property name="ObjectShortName">s_enbs[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group100" type="group">
+      <obj_property name="label">counter_1s</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_1s/enb" type="logic">
+         <obj_property name="ElementShortName">enb</obj_property>
+         <obj_property name="ObjectShortName">enb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_1s/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_1s/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_1s/o_endcount" type="logic">
+         <obj_property name="ElementShortName">o_endcount</obj_property>
+         <obj_property name="ObjectShortName">o_endcount</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_1s/counter_reg" type="array">
+         <obj_property name="ElementShortName">counter_reg[4:0]</obj_property>
+         <obj_property name="ObjectShortName">counter_reg[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_1s/G_SIZE" type="other">
+         <obj_property name="ElementShortName">G_SIZE</obj_property>
+         <obj_property name="ObjectShortName">G_SIZE</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_counter_1s/G_MAX" type="other">
+         <obj_property name="ElementShortName">G_MAX</obj_property>
+         <obj_property name="ObjectShortName">G_MAX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group136" type="group">
+      <obj_property name="label">deco</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_deco/enb" type="logic">
+         <obj_property name="ElementShortName">enb</obj_property>
+         <obj_property name="ObjectShortName">enb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_deco/i_mux" type="array">
+         <obj_property name="ElementShortName">i_mux[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i_mux[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_deco/o_display" type="array">
+         <obj_property name="ElementShortName">o_display[7:0]</obj_property>
+         <obj_property name="ObjectShortName">o_display[7:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group145" type="group">
+      <obj_property name="label">mux</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_mux/enb" type="logic">
+         <obj_property name="ElementShortName">enb</obj_property>
+         <obj_property name="ObjectShortName">enb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_mux/i_counter_2s" type="array">
+         <obj_property name="ElementShortName">i_counter_2s[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i_counter_2s[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_mux/i_counter_4s" type="array">
+         <obj_property name="ElementShortName">i_counter_4s[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i_counter_4s[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_mux/i_counter_7s" type="array">
+         <obj_property name="ElementShortName">i_counter_7s[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i_counter_7s[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_mux/i_counter_9s" type="array">
+         <obj_property name="ElementShortName">i_counter_9s[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i_counter_9s[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_mux/i_selection" type="array">
+         <obj_property name="ElementShortName">i_selection[3:0]</obj_property>
+         <obj_property name="ObjectShortName">i_selection[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_operative/u_mux/o_mux" type="array">
+         <obj_property name="ElementShortName">o_mux[3:0]</obj_property>
+         <obj_property name="ObjectShortName">o_mux[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

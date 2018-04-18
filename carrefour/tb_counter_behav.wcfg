@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="operative_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="operative" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="4811fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="25" />
+   <wvobject fp_name="/operative/enb_secu" type="logic">
+      <obj_property name="ElementShortName">enb_secu</obj_property>
+      <obj_property name="ObjectShortName">enb_secu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/enb_lrv" type="logic">
+      <obj_property name="ElementShortName">enb_lrv</obj_property>
+      <obj_property name="ObjectShortName">enb_lrv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/enb_lro" type="logic">
+      <obj_property name="ElementShortName">enb_lro</obj_property>
+      <obj_property name="ObjectShortName">enb_lro</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/enb_lcv" type="logic">
+      <obj_property name="ElementShortName">enb_lcv</obj_property>
+      <obj_property name="ObjectShortName">enb_lcv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/enb_counter" type="logic">
+      <obj_property name="ElementShortName">enb_counter</obj_property>
+      <obj_property name="ObjectShortName">enb_counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/o_display" type="array">
+      <obj_property name="ElementShortName">o_display[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_display[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/o_validate" type="logic">
+      <obj_property name="ElementShortName">o_validate</obj_property>
+      <obj_property name="ObjectShortName">o_validate</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/o_fsecu" type="logic">
+      <obj_property name="ElementShortName">o_fsecu</obj_property>
+      <obj_property name="ObjectShortName">o_fsecu</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/o_frv" type="logic">
+      <obj_property name="ElementShortName">o_frv</obj_property>
+      <obj_property name="ObjectShortName">o_frv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/o_fro" type="logic">
+      <obj_property name="ElementShortName">o_fro</obj_property>
+      <obj_property name="ObjectShortName">o_fro</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/o_fcv" type="logic">
+      <obj_property name="ElementShortName">o_fcv</obj_property>
+      <obj_property name="ObjectShortName">o_fcv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/s_rdy_1s" type="logic">
+      <obj_property name="ElementShortName">s_rdy_1s</obj_property>
+      <obj_property name="ObjectShortName">s_rdy_1s</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/s_init_value_9s" type="array">
+      <obj_property name="ElementShortName">s_init_value_9s[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_init_value_9s[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/s_init_value_7s" type="array">
+      <obj_property name="ElementShortName">s_init_value_7s[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_init_value_7s[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/s_init_value_4s" type="array">
+      <obj_property name="ElementShortName">s_init_value_4s[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_init_value_4s[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/s_init_value_2s" type="array">
+      <obj_property name="ElementShortName">s_init_value_2s[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_init_value_2s[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/s_count_9s" type="array">
+      <obj_property name="ElementShortName">s_count_9s[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_count_9s[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/s_count_7s" type="array">
+      <obj_property name="ElementShortName">s_count_7s[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_count_7s[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/s_count_4s" type="array">
+      <obj_property name="ElementShortName">s_count_4s[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_count_4s[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/s_count_2s" type="array">
+      <obj_property name="ElementShortName">s_count_2s[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_count_2s[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/s_enb_concat" type="array">
+      <obj_property name="ElementShortName">s_enb_concat[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_enb_concat[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/s_mux" type="array">
+      <obj_property name="ElementShortName">s_mux[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_mux[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/operative/s_enb_show" type="logic">
+      <obj_property name="ElementShortName">s_enb_show</obj_property>
+      <obj_property name="ObjectShortName">s_enb_show</obj_property>
+   </wvobject>
+</wave_config>
