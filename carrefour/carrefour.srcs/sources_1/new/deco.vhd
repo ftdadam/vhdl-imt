@@ -4,11 +4,10 @@ use IEEE.STD_LOGIC_1164.ALL;
 
 entity deco is
 generic(
-    NB_OUTPUT_SIG : integer := 4; --- nombre de bits
-    NB_DISPLAY : integer := 8--- peut compter jusqu'à G_Max inclus
+    NB_DISPLAY : integer := 8
     );
 port ( enb : in STD_LOGIC;
-       i_mux : in STD_LOGIC_VECTOR (NB_OUTPUT_SIG-1 downto 0);
+       i_mux : in STD_LOGIC_VECTOR (3 downto 0);
        o_display : out STD_LOGIC_VECTOR (NB_DISPLAY-1 downto 0)
        );
 end entity deco;
@@ -17,6 +16,11 @@ architecture Behavioral of deco is
 
 begin
 
+
+-- This process is combinatorial, the exit depends of the value of the input
+-- converting the count value (4 bits) to a codified signal to turn on the dis-play.
+-- We also included an enable signal, to turn off the 7 segment display if the road
+-- was permanently on green (i.e No cars on the path), and a default case to avoid latches.
 process (i_mux,enb) is
 begin 
     if(enb = '1') then

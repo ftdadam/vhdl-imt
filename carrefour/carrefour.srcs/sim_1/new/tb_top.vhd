@@ -20,7 +20,7 @@ port (  rst : in STD_LOGIC;
         sim_o_led_co : out STD_LOGIC;
         sim_o_led_cv : out STD_LOGIC;
         sim_o_display : out STD_LOGIC_VECTOR (NB_DISPLAY-1 downto 0);
-        sim_o_validate : out STD_LOGIC
+        sim_o_validate : out STD_LOGIC_VECTOR (3 downto 0)
 );
 end component;
 
@@ -37,13 +37,13 @@ signal sim_o_led_cr : STD_LOGIC;
 signal sim_o_led_co : STD_LOGIC;
 signal sim_o_led_cv : STD_LOGIC;
 signal sim_o_display : STD_LOGIC_VECTOR (NB_DISPLAY-1 downto 0);
-signal sim_o_validate : STD_LOGIC;
+signal sim_o_validate : STD_LOGIC_VECTOR (3 downto 0);
 
 begin
 
 clk  <= not clk after CLOCK_HALF_PERIOD;
-rst  <= '0' after 100 ns ;
-i_presence <= '1' after 200ns, '0' after 600ns; 
+rst  <= '0' after 24 ns ;
+i_presence <= '1' after 173ns, '0' after 435ns, '1' after 535ns; 
 
 u_top : top
 generic map(

@@ -15,7 +15,7 @@ port (  rst : in STD_LOGIC;
         sim_o_led_co : out STD_LOGIC;
         sim_o_led_cv : out STD_LOGIC;
         sim_o_display : out STD_LOGIC_VECTOR (NB_DISPLAY-1 downto 0);
-        sim_o_validate : out STD_LOGIC
+        sim_o_validate : out STD_LOGIC_VECTOR (3 downto 0)
 );
 
 CONSTANT NB_OUTPUT_SIG : integer := 4;
@@ -38,7 +38,6 @@ port (  enb_secu : in STD_LOGIC;
         rst : in STD_LOGIC;
         clk : in STD_LOGIC;
         o_display : out STD_LOGIC_VECTOR (NB_DISPLAY-1 downto 0);
-        o_validate : out STD_LOGIC;
         o_fsecu : out STD_LOGIC;
         o_frv : out STD_LOGIC;
         o_fro : out STD_LOGIC;
@@ -81,6 +80,8 @@ signal connect_enb_lcv : STD_LOGIC;
 
 begin
 
+-- This process is combinatorial, the signal "enb_counter" enables the counter
+-- to count until 1 second passes (i.e CYCLES = clock frequency) 
 process (rst) is
 begin
     enb_counter <= not rst;
@@ -99,7 +100,6 @@ port map(   enb_secu => connect_enb_secu,
             rst => rst,
             clk => clk,
             o_display => sim_o_display,
-            o_validate => sim_o_validate,
             o_fsecu => connect_fsecu,
             o_frv => connect_frv,
             o_fro => connect_fro,
@@ -125,5 +125,7 @@ port map(   rst => rst,
             o_led_co => sim_o_led_co,
             o_led_cv => sim_o_led_cv 
 );
+
+sim_o_validate <= "1110";
 
 end Behavioral;

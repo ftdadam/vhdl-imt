@@ -19,6 +19,16 @@ architecture Behavioral of counter_1s is
     signal counter_reg : unsigned(G_SIZE-1 downto 0);
 begin
 
+
+-- This process is combinatorial and sequential
+-- The combinatorial part is only the asynchronous reset, that puts the Flip Flop Vector (counter register) to 0
+-- The sequential part depends not only of the value of the counter register, but also of the input values
+-- For this counter, while the enable is activated, it simply counts, adding 1 to the register,
+-- when it reaches the maximum given value (to count exactly 1 second), it restarts automatically from 0, 
+-- to count another second.
+-- Also, there is no need to declare an ouput for the value of the register, we only need a flag signal to warn the
+-- other counters that 1 second has passed, that signal is purely combinatory (o_endcount), lasting a clock cycle because
+-- it depends of the values in the register (that holds for a whole clock cycle)  
 process (clk, rst) is
     begin
         if(rst = '1') then

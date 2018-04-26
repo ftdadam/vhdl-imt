@@ -10,7 +10,7 @@ Time Resolution for simulation is 1ps
 Compiling package std.standard
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling architecture behavioral of entity xil_defaultlib.counter_1s [\counter_1s(g_size=5,g_max=20)\]
+Compiling architecture behavioral of entity xil_defaultlib.counter_1s [\counter_1s(g_size=5,g_max=1)\]
 Compiling architecture behavioral of entity xil_defaultlib.counter_sec [counter_sec_default]
 Compiling architecture behavioral of entity xil_defaultlib.mux [mux_default]
 Compiling architecture behavioral of entity xil_defaultlib.deco [deco_default]

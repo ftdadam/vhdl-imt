@@ -40,6 +40,9 @@ signal s_enbs : STD_LOGIC_VECTOR (NB_ENBS-1 downto 0);
 
 begin
 
+-- This process is combinatorial and sequential
+-- The combinatorial part can be seen with the asynchronous reset
+-- The rest of the process is sequential, every clock cycle the state of the FSM changes. 
 process(clk,rst) is
 begin
     if(rst = '1') then
@@ -50,6 +53,9 @@ begin
         s_present <= s_present;
     end if;
 end process;
+
+-- This process is Combinatorial, according to the values of the inputs in
+-- each state, the FSM prepares to change to the next state or stays in the current one.
 
 process (i_fsecu,i_frv,i_fro ,i_fcv,i_presence,s_present) is
 begin

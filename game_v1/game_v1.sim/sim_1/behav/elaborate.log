@@ -1,0 +1,22 @@
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 66e3c22a33694dfb935cccc3af844240 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_game_controller_behav xil_defaultlib.tb_game_controller -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture behavioral of entity xil_defaultlib.prbs [prbs_default]
+Compiling architecture behavioral of entity xil_defaultlib.prbs [\prbs(nb_out=1)\]
+Compiling architecture behavioral of entity xil_defaultlib.board_matrix [board_matrix_default]
+Compiling architecture behavioral of entity xil_defaultlib.player_vector [player_vector_default]
+Compiling architecture behavioral of entity xil_defaultlib.collision [collision_default]
+Compiling architecture behavioral of entity xil_defaultlib.game_controller [game_controller_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_game_controller
+Built simulation snapshot tb_game_controller_behav

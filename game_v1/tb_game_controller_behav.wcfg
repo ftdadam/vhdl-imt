@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_game_controller_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_game_controller" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="660000000fs"></ZoomStartTime>
+      <ZoomEndTime time="1584000001fs"></ZoomEndTime>
+      <Cursor1Time time="1430000000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="16" />
+   <wvobject fp_name="/tb_game_controller/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_game_controller/rst" type="logic">
+      <obj_property name="ElementShortName">rst</obj_property>
+      <obj_property name="ObjectShortName">rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_game_controller/enb" type="logic">
+      <obj_property name="ElementShortName">enb</obj_property>
+      <obj_property name="ObjectShortName">enb</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_game_controller/clk_period" type="other">
+      <obj_property name="ElementShortName">clk_period</obj_property>
+      <obj_property name="ObjectShortName">clk_period</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_game_controller/u_game_controller/board/o_board_end_vector" type="array">
+      <obj_property name="ElementShortName">o_board_end_vector[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_board_end_vector[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_game_controller/u_game_controller/board/board" type="array">
+      <obj_property name="ElementShortName">board[7:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">board[7:0][15:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_game_controller/u_game_controller/board/board[7]" type="array">
+         <obj_property name="ElementShortName">[7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][15:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_game_controller/u_game_controller/board/board[6]" type="array">
+         <obj_property name="ElementShortName">[6][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][15:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_game_controller/u_game_controller/board/board[5]" type="array">
+         <obj_property name="ElementShortName">[5][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][15:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_game_controller/u_game_controller/board/board[4]" type="array">
+         <obj_property name="ElementShortName">[4][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][15:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_game_controller/u_game_controller/board/board[3]" type="array">
+         <obj_property name="ElementShortName">[3][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][15:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_game_controller/u_game_controller/board/board[2]" type="array">
+         <obj_property name="ElementShortName">[2][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][15:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_game_controller/u_game_controller/board/board[1]" type="array">
+         <obj_property name="ElementShortName">[1][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][15:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_game_controller/u_game_controller/board/board[0]" type="array">
+         <obj_property name="ElementShortName">[0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][15:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_game_controller/u_game_controller/board/i_obstacle_bit" type="array">
+      <obj_property name="ElementShortName">i_obstacle_bit[0:0]</obj_property>
+      <obj_property name="ObjectShortName">i_obstacle_bit[0:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_game_controller/u_game_controller/board/i_obstacle_line" type="array">
+      <obj_property name="ElementShortName">i_obstacle_line[2:0]</obj_property>
+      <obj_property name="ObjectShortName">i_obstacle_line[2:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_game_controller/u_game_controller/player/player_vect" type="array">
+      <obj_property name="ElementShortName">player_vect[7:0]</obj_property>
+      <obj_property name="ObjectShortName">player_vect[7:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_game_controller/u_game_controller/player/i_button_down" type="logic">
+      <obj_property name="ElementShortName">i_button_down</obj_property>
+      <obj_property name="ObjectShortName">i_button_down</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_game_controller/u_game_controller/player/i_button_up" type="logic">
+      <obj_property name="ElementShortName">i_button_up</obj_property>
+      <obj_property name="ObjectShortName">i_button_up</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_game_controller/u_game_controller/collision_control/lives" type="other">
+      <obj_property name="ElementShortName">lives</obj_property>
+      <obj_property name="ObjectShortName">lives</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_game_controller/u_game_controller/collision_control/game_over" type="logic">
+      <obj_property name="ElementShortName">game_over</obj_property>
+      <obj_property name="ObjectShortName">game_over</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_game_controller/u_game_controller/collision_control/collision" type="logic">
+      <obj_property name="ElementShortName">collision</obj_property>
+      <obj_property name="ObjectShortName">collision</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_game_controller/u_game_controller/collision_control/i_player_vect" type="array">
+      <obj_property name="ElementShortName">i_player_vect[7:0]</obj_property>
+      <obj_property name="ObjectShortName">i_player_vect[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_game_controller/u_game_controller/collision_control/i_board_vect" type="array">
+      <obj_property name="ElementShortName">i_board_vect[7:0]</obj_property>
+      <obj_property name="ObjectShortName">i_board_vect[7:0]</obj_property>
+   </wvobject>
+</wave_config>

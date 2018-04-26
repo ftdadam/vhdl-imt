@@ -2,12 +2,12 @@
 # Vivado v2016.1 (64-bit)
 # SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
 # IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
-# Start of session at: Wed Apr 18 09:27:40 2018
-# Process ID: 6420
-# Current directory: D:/imt/carrefour/carrefour.runs/synth_1
+# Start of session at: Sat Apr 21 18:59:53 2018
+# Process ID: 732
+# Current directory: D:/imt/vhdl-imt/carrefour/carrefour.runs/synth_1
 # Command line: vivado.exe -log top.vds -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: D:/imt/carrefour/carrefour.runs/synth_1/top.vds
-# Journal file: D:/imt/carrefour/carrefour.runs/synth_1\vivado.jou
+# Log file: D:/imt/vhdl-imt/carrefour/carrefour.runs/synth_1/top.vds
+# Journal file: D:/imt/vhdl-imt/carrefour/carrefour.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
 Command: synth_design -top top -part xc7k70tfbv676-1
@@ -15,71 +15,71 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k70t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 7996 
+INFO: Helper process launched with PID 6160 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 282.723 ; gain = 76.418
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 282.074 ; gain = 74.813
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [D:/imt/carrefour/carrefour.srcs/sources_1/new/top.vhd:25]
+INFO: [Synth 8-638] synthesizing module 'top' [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/top.vhd:25]
 	Parameter NB_DISPLAY bound to: 8 - type: integer 
 	Parameter NB_DISPLAY bound to: 8 - type: integer 
 	Parameter NB_OUTPUT_SIG bound to: 4 - type: integer 
 	Parameter NB_SELECTION bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'operative' declared at 'D:/imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:5' bound to instance 'u_operative' of component 'operative' [D:/imt/carrefour/carrefour.srcs/sources_1/new/top.vhd:89]
-INFO: [Synth 8-638] synthesizing module 'operative' [D:/imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:33]
+INFO: [Synth 8-3491] module 'operative' declared at 'D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:5' bound to instance 'u_operative' of component 'operative' [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/top.vhd:90]
+INFO: [Synth 8-638] synthesizing module 'operative' [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:32]
 	Parameter NB_DISPLAY bound to: 8 - type: integer 
 	Parameter NB_OUTPUT_SIG bound to: 4 - type: integer 
 	Parameter NB_SELECTION bound to: 4 - type: integer 
 	Parameter G_SIZE bound to: 5 - type: integer 
-	Parameter G_MAX bound to: 20 - type: integer 
-INFO: [Synth 8-3491] module 'counter_1s' declared at 'D:/imt/carrefour/carrefour.srcs/sources_1/new/counter_1s.vhd:6' bound to instance 'u_counter_1s' of component 'counter_1s' [D:/imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:110]
-INFO: [Synth 8-638] synthesizing module 'counter_1s' [D:/imt/carrefour/carrefour.srcs/sources_1/new/counter_1s.vhd:18]
+	Parameter G_MAX bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'counter_1s' declared at 'D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter_1s.vhd:6' bound to instance 'u_counter_s' of component 'counter_1s' [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:107]
+INFO: [Synth 8-638] synthesizing module 'counter_1s' [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter_1s.vhd:18]
 	Parameter G_SIZE bound to: 5 - type: integer 
-	Parameter G_MAX bound to: 20 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counter_1s' (1#1) [D:/imt/carrefour/carrefour.srcs/sources_1/new/counter_1s.vhd:18]
+	Parameter G_MAX bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'counter_1s' (1#1) [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter_1s.vhd:18]
 	Parameter G_SIZE bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'counter_sec' declared at 'D:/imt/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd:6' bound to instance 'u_counter_9s' of component 'counter_sec' [D:/imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:122]
-INFO: [Synth 8-638] synthesizing module 'counter_sec' [D:/imt/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd:20]
+INFO: [Synth 8-3491] module 'counter_sec' declared at 'D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd:6' bound to instance 'u_counter_7s' of component 'counter_sec' [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:119]
+INFO: [Synth 8-638] synthesizing module 'counter_sec' [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd:20]
 	Parameter G_SIZE bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'counter_sec' (2#1) [D:/imt/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'counter_sec' (2#1) [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd:20]
 	Parameter G_SIZE bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'counter_sec' declared at 'D:/imt/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd:6' bound to instance 'u_counter_7s' of component 'counter_sec' [D:/imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:136]
+INFO: [Synth 8-3491] module 'counter_sec' declared at 'D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd:6' bound to instance 'u_counter_5s' of component 'counter_sec' [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:133]
 	Parameter G_SIZE bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'counter_sec' declared at 'D:/imt/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd:6' bound to instance 'u_counter_4s' of component 'counter_sec' [D:/imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:150]
+INFO: [Synth 8-3491] module 'counter_sec' declared at 'D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd:6' bound to instance 'u_counter_3s' of component 'counter_sec' [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:147]
 	Parameter G_SIZE bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'counter_sec' declared at 'D:/imt/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd:6' bound to instance 'u_counter_2s' of component 'counter_sec' [D:/imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:164]
+INFO: [Synth 8-3491] module 'counter_sec' declared at 'D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd:6' bound to instance 'u_counter_1s' of component 'counter_sec' [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:161]
 	Parameter NB_OUTPUT_SIG bound to: 4 - type: integer 
-	Parameter NB_SELECTION bound to: 4 - type: integer 
-INFO: [Synth 8-3491] module 'mux' declared at 'D:/imt/carrefour/carrefour.srcs/sources_1/new/mux.vhd:5' bound to instance 'u_mux' of component 'mux' [D:/imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:178]
-INFO: [Synth 8-638] synthesizing module 'mux' [D:/imt/carrefour/carrefour.srcs/sources_1/new/mux.vhd:19]
+INFO: [Synth 8-3491] module 'mux' declared at 'D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/mux.vhd:5' bound to instance 'u_mux' of component 'mux' [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:175]
+INFO: [Synth 8-638] synthesizing module 'mux' [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/mux.vhd:18]
 	Parameter NB_OUTPUT_SIG bound to: 4 - type: integer 
-	Parameter NB_SELECTION bound to: 4 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'mux' (3#1) [D:/imt/carrefour/carrefour.srcs/sources_1/new/mux.vhd:19]
-	Parameter NB_OUTPUT_SIG bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'mux' (3#1) [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/mux.vhd:18]
 	Parameter NB_DISPLAY bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'deco' declared at 'D:/imt/carrefour/carrefour.srcs/sources_1/new/deco.vhd:5' bound to instance 'u_deco' of component 'deco' [D:/imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:191]
-INFO: [Synth 8-638] synthesizing module 'deco' [D:/imt/carrefour/carrefour.srcs/sources_1/new/deco.vhd:16]
-	Parameter NB_OUTPUT_SIG bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'deco' declared at 'D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/deco.vhd:5' bound to instance 'u_deco' of component 'deco' [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:188]
+INFO: [Synth 8-638] synthesizing module 'deco' [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/deco.vhd:15]
 	Parameter NB_DISPLAY bound to: 8 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'deco' (4#1) [D:/imt/carrefour/carrefour.srcs/sources_1/new/deco.vhd:16]
-INFO: [Synth 8-256] done synthesizing module 'operative' (5#1) [D:/imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:33]
-INFO: [Synth 8-3491] module 'control' declared at 'D:/imt/carrefour/carrefour.srcs/sources_1/new/control.vhd:5' bound to instance 'u_control' of component 'control' [D:/imt/carrefour/carrefour.srcs/sources_1/new/top.vhd:109]
-INFO: [Synth 8-638] synthesizing module 'control' [D:/imt/carrefour/carrefour.srcs/sources_1/new/control.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'control' (6#1) [D:/imt/carrefour/carrefour.srcs/sources_1/new/control.vhd:32]
-INFO: [Synth 8-256] done synthesizing module 'top' (7#1) [D:/imt/carrefour/carrefour.srcs/sources_1/new/top.vhd:25]
+INFO: [Synth 8-256] done synthesizing module 'deco' (4#1) [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/deco.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'operative' (5#1) [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:32]
+INFO: [Synth 8-3491] module 'control' declared at 'D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/control.vhd:5' bound to instance 'u_control' of component 'control' [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/top.vhd:109]
+INFO: [Synth 8-638] synthesizing module 'control' [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/control.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'control' (6#1) [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/control.vhd:32]
+INFO: [Synth 8-256] done synthesizing module 'top' (7#1) [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/top.vhd:25]
+WARNING: [Synth 8-3917] design top has port sim_o_validate[3] driven by constant 1
+WARNING: [Synth 8-3917] design top has port sim_o_validate[2] driven by constant 1
+WARNING: [Synth 8-3917] design top has port sim_o_validate[1] driven by constant 1
+WARNING: [Synth 8-3917] design top has port sim_o_validate[0] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:09 . Memory (MB): peak = 319.168 ; gain = 112.863
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 319.516 ; gain = 112.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 319.168 ; gain = 112.863
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 319.516 ; gain = 112.254
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k70tfbv676-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 319.516 ; gain = 112.254
+---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7k70tfbv676-1
----------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 319.168 ; gain = 112.863
----------------------------------------------------------------------------------
 INFO: [Synth 8-5546] ROM "o_endcount" won't be mapped to RAM because it is too sparse
 INFO: [Synth 8-5544] ROM "o_endcount" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-802] inferred FSM for state register 's_present_reg' in module 'control'
@@ -96,7 +96,7 @@ INFO: [Synth 8-802] inferred FSM for state register 's_present_reg' in module 'c
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 's_present_reg' using encoding 'one-hot' in module 'control'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:09 . Memory (MB): peak = 328.777 ; gain = 122.473
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 335.336 ; gain = 128.074
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -179,14 +179,18 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 433.742 ; gain = 227.438
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 412.281 ; gain = 205.020
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
+WARNING: [Synth 8-3917] design top has port sim_o_validate[3] driven by constant 1
+WARNING: [Synth 8-3917] design top has port sim_o_validate[2] driven by constant 1
+WARNING: [Synth 8-3917] design top has port sim_o_validate[1] driven by constant 1
+WARNING: [Synth 8-3917] design top has port sim_o_validate[0] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 433.742 ; gain = 227.438
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 415.480 ; gain = 208.219
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:14 . Memory (MB): peak = 433.742 ; gain = 227.438
+Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 415.480 ; gain = 208.219
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -198,9 +202,9 @@ No constraint files found.
 Start Area Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 455.719 ; gain = 249.414
+Finished Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 440.172 ; gain = 232.910
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 455.719 ; gain = 249.414
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 440.172 ; gain = 232.910
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -212,7 +216,7 @@ Start Timing Optimization
 ---------------------------------------------------------------------------------
 No constraint files found.
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 455.719 ; gain = 249.414
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 440.172 ; gain = 232.910
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -223,17 +227,25 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'u_operative/u_counter_s/counter_reg_reg[4]' (FDC) to 'u_operative/u_counter_s/counter_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'u_operative/u_counter_s/counter_reg_reg[3]' (FDC) to 'u_operative/u_counter_s/counter_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_operative/u_counter_s/counter_reg_reg[1]' (FDC) to 'u_operative/u_counter_s/counter_reg_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_operative/u_counter_s/counter_reg_reg[2] )
+WARNING: [Synth 8-3332] Sequential element (u_operative/u_counter_s/counter_reg_reg[4]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_operative/u_counter_s/counter_reg_reg[3]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_operative/u_counter_s/counter_reg_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_operative/u_counter_s/counter_reg_reg[1]) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 455.719 ; gain = 249.414
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 440.172 ; gain = 232.910
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 455.719 ; gain = 249.414
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 440.172 ; gain = 232.910
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:15 . Memory (MB): peak = 455.719 ; gain = 249.414
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 440.172 ; gain = 232.910
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -250,7 +262,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 455.719 ; gain = 249.414
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 440.172 ; gain = 232.910
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -263,7 +275,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 455.719 ; gain = 249.414
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 440.172 ; gain = 232.910
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -275,25 +287,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 455.719 ; gain = 249.414
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 440.172 ; gain = 232.910
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 455.719 ; gain = 249.414
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 440.172 ; gain = 232.910
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 455.719 ; gain = 249.414
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 440.172 ; gain = 232.910
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 455.719 ; gain = 249.414
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 440.172 ; gain = 232.910
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -312,35 +324,35 @@ Report Cell Usage:
 |1     |BUFG |     1|
 |2     |LUT2 |     5|
 |3     |LUT3 |     9|
-|4     |LUT4 |    10|
-|5     |LUT5 |    10|
-|6     |LUT6 |    30|
-|7     |FDCE |    20|
-|8     |FDPE |     8|
+|4     |LUT4 |     9|
+|5     |LUT5 |     9|
+|6     |LUT6 |    25|
+|7     |FDCE |    15|
+|8     |FDPE |     9|
 |9     |IBUF |     3|
-|10    |OBUF |    15|
+|10    |OBUF |    18|
 +------+-----+------+
 
 Report Instance Areas: 
 +------+-----------------+--------------+------+
 |      |Instance         |Module        |Cells |
 +------+-----------------+--------------+------+
-|1     |top              |              |   111|
+|1     |top              |              |   103|
 |2     |  u_control      |control       |    18|
-|3     |  u_operative    |operative     |    74|
-|4     |    u_counter_1s |counter_1s    |    15|
-|5     |    u_counter_2s |counter_sec   |    11|
-|6     |    u_counter_4s |counter_sec_0 |    12|
-|7     |    u_counter_7s |counter_sec_1 |    22|
-|8     |    u_counter_9s |counter_sec_2 |    13|
+|3     |  u_operative    |operative     |    63|
+|4     |    u_counter_1s |counter_sec   |    11|
+|5     |    u_counter_3s |counter_sec_0 |    13|
+|6     |    u_counter_5s |counter_sec_1 |    22|
+|7     |    u_counter_7s |counter_sec_2 |    12|
+|8     |    u_counter_s  |counter_1s    |     4|
 |9     |    u_mux        |mux           |     1|
 +------+-----------------+--------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 455.719 ; gain = 249.414
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 440.172 ; gain = 232.910
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:13 . Memory (MB): peak = 455.719 ; gain = 249.414
-Synthesis Optimization Complete : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 455.719 ; gain = 249.414
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 440.172 ; gain = 232.910
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 440.172 ; gain = 232.910
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -350,8 +362,8 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-36 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+40 Infos, 12 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:18 . Memory (MB): peak = 520.461 ; gain = 314.156
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.050 . Memory (MB): peak = 520.461 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Apr 18 09:28:01 2018...
+synth_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:32 . Memory (MB): peak = 516.273 ; gain = 309.012
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.023 . Memory (MB): peak = 516.273 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 21 19:00:30 2018...

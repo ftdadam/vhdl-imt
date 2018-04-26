@@ -15,7 +15,6 @@ port (  enb_secu : in STD_LOGIC;
         rst : in STD_LOGIC;
         clk : in STD_LOGIC;
         o_display : out STD_LOGIC_VECTOR (NB_DISPLAY-1 downto 0);
-        o_validate : out STD_LOGIC;
         o_fsecu : out STD_LOGIC;
         o_frv : out STD_LOGIC;
         o_fro : out STD_LOGIC;
@@ -23,7 +22,7 @@ port (  enb_secu : in STD_LOGIC;
 );
 
 CONSTANT COUNTER_1S_SIZE : integer := 5;
-CONSTANT COUNTER_1S_MAX  : integer := 20;
+CONSTANT COUNTER_1S_MAX  : integer := 1;
 CONSTANT COUNTER_SIZE : integer := 4;
 CONSTANT NB_OUTPUT : integer := 4;
 CONSTANT NB_SELECT : integer := 4;
@@ -59,55 +58,53 @@ port (  enb : in STD_LOGIC;
 end component;
 
 component mux is
-generic(NB_OUTPUT_SIG : integer;
-        NB_SELECTION : integer
+generic(
+        NB_OUTPUT_SIG : integer
 );
 port (  enb : in STD_LOGIC;
-        i_counter_2s : in STD_LOGIC_VECTOR (NB_OUTPUT_SIG-1 downto 0);
-        i_counter_4s : in STD_LOGIC_VECTOR (NB_OUTPUT_SIG-1 downto 0);
+        i_counter_1s : in STD_LOGIC_VECTOR (NB_OUTPUT_SIG-1 downto 0);
+        i_counter_3s : in STD_LOGIC_VECTOR (NB_OUTPUT_SIG-1 downto 0);
+        i_counter_5s : in STD_LOGIC_VECTOR (NB_OUTPUT_SIG-1 downto 0);
         i_counter_7s : in STD_LOGIC_VECTOR (NB_OUTPUT_SIG-1 downto 0);
-        i_counter_9s : in STD_LOGIC_VECTOR (NB_OUTPUT_SIG-1 downto 0);
-        i_selection : in STD_LOGIC_VECTOR (NB_SELECTION-1 downto 0);
+        i_selection : in STD_LOGIC_VECTOR (3 downto 0);
         o_mux : out STD_LOGIC_VECTOR (NB_OUTPUT_SIG-1 downto 0)
 );
 end component;
 
 component deco is
 generic(
-    NB_OUTPUT_SIG : integer;
     NB_DISPLAY : integer
     );
 port ( enb : in STD_LOGIC;
-       i_mux : in STD_LOGIC_VECTOR (NB_OUTPUT_SIG-1 downto 0);
+       i_mux : in STD_LOGIC_VECTOR (3 downto 0);
        o_display : out STD_LOGIC_VECTOR (NB_DISPLAY-1 downto 0)
        );
 end component;
 
 -- SIGNALS
 signal s_rdy_1s : STD_LOGIC;
-signal s_init_value_9s : STD_LOGIC_VECTOR (COUNTER_SIZE-1 downto 0);
 signal s_init_value_7s : STD_LOGIC_VECTOR (COUNTER_SIZE-1 downto 0);
-signal s_init_value_4s : STD_LOGIC_VECTOR (COUNTER_SIZE-1 downto 0);
-signal s_init_value_2s : STD_LOGIC_VECTOR (COUNTER_SIZE-1 downto 0);
-signal s_count_9s : STD_LOGIC_VECTOR (NB_OUTPUT-1 downto 0);
+signal s_init_value_5s : STD_LOGIC_VECTOR (COUNTER_SIZE-1 downto 0);
+signal s_init_value_3s : STD_LOGIC_VECTOR (COUNTER_SIZE-1 downto 0);
+signal s_init_value_1s : STD_LOGIC_VECTOR (COUNTER_SIZE-1 downto 0);
 signal s_count_7s : STD_LOGIC_VECTOR (NB_OUTPUT-1 downto 0);
-signal s_count_4s : STD_LOGIC_VECTOR (NB_OUTPUT-1 downto 0);
-signal s_count_2s : STD_LOGIC_VECTOR (NB_OUTPUT-1 downto 0);
+signal s_count_5s : STD_LOGIC_VECTOR (NB_OUTPUT-1 downto 0);
+signal s_count_3s : STD_LOGIC_VECTOR (NB_OUTPUT-1 downto 0);
+signal s_count_1s : STD_LOGIC_VECTOR (NB_OUTPUT-1 downto 0);
 signal s_enb_concat : STD_LOGIC_VECTOR (NB_SELECTION-1 downto 0);
 signal s_mux : STD_LOGIC_VECTOR (NB_OUTPUT-1 downto 0);
 signal s_enb_show : STD_LOGIC;
 
 begin
 
-s_init_value_9s <= "1001";
 s_init_value_7s <= "0111";
-s_init_value_4s <= "0100";
-s_init_value_2s <= "0010";
+s_init_value_5s <= "0101";
+s_init_value_3s <= "0011";
+s_init_value_1s <= "0001";
 s_enb_concat <= enb_secu & enb_lrv & enb_lro & enb_lcv;
 s_enb_show <= enb_secu or enb_lrv or enb_lro or enb_lcv;
-o_validate <= enb_secu and enb_lrv and enb_lro and enb_lcv; -- change!!!!
 
-u_counter_1s : counter_1s
+u_counter_s : counter_1s
 generic map(
     G_SIZE      => COUNTER_1S_SIZE ,
     G_MAX       => COUNTER_1S_MAX
@@ -119,20 +116,6 @@ port map(
     o_endcount  => s_rdy_1s
 );
 
-u_counter_9s : counter_sec
-generic map(
-    G_SIZE      => COUNTER_SIZE
-)
-port map(
-    clk     => clk                  ,
-    rst     => rst                  ,
-    enb     => s_rdy_1s             ,
-    i_init  => enb_lrv              ,
-    i_init_value => s_init_value_9s ,
-    o_endcount => o_frv             ,
-    o_count => s_count_9s
-);
-
 u_counter_7s : counter_sec
 generic map(
     G_SIZE      => COUNTER_SIZE
@@ -141,13 +124,27 @@ port map(
     clk     => clk                  ,
     rst     => rst                  ,
     enb     => s_rdy_1s             ,
-    i_init  => enb_lcv              ,
+    i_init  => enb_lrv              ,
     i_init_value => s_init_value_7s ,
-    o_endcount => o_fcv             ,
+    o_endcount => o_frv             ,
     o_count => s_count_7s
 );
 
-u_counter_4s : counter_sec
+u_counter_5s : counter_sec
+generic map(
+    G_SIZE      => COUNTER_SIZE
+)
+port map(
+    clk     => clk                  ,
+    rst     => rst                  ,
+    enb     => s_rdy_1s             ,
+    i_init  => enb_lcv              ,
+    i_init_value => s_init_value_5s ,
+    o_endcount => o_fcv             ,
+    o_count => s_count_5s
+);
+
+u_counter_3s : counter_sec
 generic map(
     G_SIZE      => COUNTER_SIZE
 )
@@ -156,12 +153,12 @@ port map(
     rst     => rst                  ,
     enb     => s_rdy_1s             ,
     i_init  => enb_lro              ,
-    i_init_value => s_init_value_4s ,
+    i_init_value => s_init_value_3s ,
     o_endcount => o_fro             ,
-    o_count => s_count_4s
+    o_count => s_count_3s
 );
 
-u_counter_2s : counter_sec
+u_counter_1s : counter_sec
 generic map(
     G_SIZE      => COUNTER_SIZE
 )
@@ -170,27 +167,26 @@ port map(
     rst     => rst                  ,
     enb     => s_rdy_1s             ,
     i_init  => enb_secu             ,
-    i_init_value => s_init_value_2s ,
+    i_init_value => s_init_value_1s ,
     o_endcount => o_fsecu           ,
-    o_count => s_count_2s
+    o_count => s_count_1s
 );
 
 u_mux : mux
-generic map(NB_OUTPUT_SIG => NB_OUTPUT,
-            NB_SELECTION => NB_SELECT
+generic map(
+            NB_OUTPUT_SIG => NB_OUTPUT_SIG
 )
 port map (  enb => s_enb_show,
-            i_counter_2s => s_count_2s,
-            i_counter_4s => s_count_4s,
+            i_counter_1s => s_count_1s,
+            i_counter_3s => s_count_3s,
+            i_counter_5s => s_count_5s,
             i_counter_7s => s_count_7s,
-            i_counter_9s => s_count_9s,
             i_selection => s_enb_concat,
             o_mux => s_mux
 );
 
 u_deco : deco
 generic map(
-    NB_OUTPUT_SIG => NB_OUTPUT_SIG,
     NB_DISPLAY => NB_DISPLAY
     )
 port map( enb => s_enb_show,

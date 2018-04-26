@@ -1,0 +1,332 @@
+#-----------------------------------------------------------
+# Vivado v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Sat Apr 21 14:36:55 2018
+# Process ID: 9848
+# Current directory: D:/imt/vhdl-imt/carrefour
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2208 D:\imt\vhdl-imt\carrefour\carrefour.xpr
+# Log file: D:/imt/vhdl-imt/carrefour/vivado.log
+# Journal file: D:/imt/vhdl-imt/carrefour\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/imt/vhdl-imt/carrefour/carrefour.xpr
+INFO: [Project 1-313] Project file moved from 'D:/imt/carrefour' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2016.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 704.535 ; gain = 114.426
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-1061] Parsing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd" into library xil_defaultlib [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:1]
+[Sat Apr 21 14:45:11 2018] Launched synth_1...
+Run output will be captured here: D:/imt/vhdl-imt/carrefour/carrefour.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:33 . Memory (MB): peak = 746.563 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-1061] Parsing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd" into library xil_defaultlib [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:1]
+[Sat Apr 21 14:47:05 2018] Launched synth_1...
+Run output will be captured here: D:/imt/vhdl-imt/carrefour/carrefour.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:00 ; elapsed = 00:00:30 . Memory (MB): peak = 746.563 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-1061] Parsing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd" into library xil_defaultlib [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:1]
+[Sat Apr 21 14:57:13 2018] Launched synth_1...
+Run output will be captured here: D:/imt/vhdl-imt/carrefour/carrefour.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:30 . Memory (MB): peak = 763.926 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-1061] Parsing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd" into library xil_defaultlib [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd:1]
+[Sat Apr 21 14:58:08 2018] Launched synth_1...
+Run output will be captured here: D:/imt/vhdl-imt/carrefour/carrefour.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:01 ; elapsed = 00:00:30 . Memory (MB): peak = 763.926 ; gain = 0.000
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+INFO: [HDL 9-1061] Parsing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/mux.vhd" into library xil_defaultlib [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/mux.vhd:1]
+[Sat Apr 21 14:59:21 2018] Launched synth_1...
+Run output will be captured here: D:/imt/vhdl-imt/carrefour/carrefour.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:02 ; elapsed = 00:00:30 . Memory (MB): peak = 763.926 ; gain = 0.000
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/imt/vhdl-imt/carrefour/carrefour.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/deco.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity deco
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter_sec
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter_1s.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter_1s
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity control
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity operative
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sim_1/new/tb_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/imt/vhdl-imt/carrefour/carrefour.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto ec2ebf6a36e14c9b9314c960bb11de97 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-619] entity port sim_o_validate does not match with type std_logic of component port [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sim_1/new/tb_top.vhd:23]
+ERROR: [VRFC 10-664] expression has 9 elements ; expected 4 [D:/imt/vhdl-imt/carrefour/carrefour.srcs/sim_1/new/tb_top.vhd:23]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit tb_top in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'D:/imt/vhdl-imt/carrefour/carrefour.sim/sim_1/behav/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'D:/imt/vhdl-imt/carrefour/carrefour.sim/sim_1/behav/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+launch_simulation
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/imt/vhdl-imt/carrefour/carrefour.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/deco.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity deco
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter_sec
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter_1s.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter_1s
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity control
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity operative
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sim_1/new/tb_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/imt/vhdl-imt/carrefour/carrefour.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto ec2ebf6a36e14c9b9314c960bb11de97 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_1s [\counter_1s(g_size=5,g_max=1)\]
+Compiling architecture behavioral of entity xil_defaultlib.counter_sec [counter_sec_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux [mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.deco [deco_default]
+Compiling architecture behavioral of entity xil_defaultlib.operative [operative_default]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+
+****** Webtalk v2016.1 (64-bit)
+  **** SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+  **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source D:/imt/vhdl-imt/carrefour/carrefour.sim/sim_1/behav/xsim.dir/tb_top_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Sat Apr 21 15:02:58 2018...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:26 . Memory (MB): peak = 763.926 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '26' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/imt/vhdl-imt/carrefour/carrefour.sim/sim_1/behav'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_top_behav -key {Behavioral:sim_1:Functional:tb_top} -tclbatch {tb_top.tcl} -view {D:/imt/vhdl-imt/carrefour/tb_top_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+open_wave_config D:/imt/vhdl-imt/carrefour/tb_top_behav.wcfg
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_9s/enb was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_9s/rst was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_9s/clk was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_9s/i_init was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_9s/i_init_value was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_9s/o_endcount was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_9s/o_count was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_9s/counter_reg was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_9s/G_SIZE was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_4s/enb was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_4s/rst was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_4s/clk was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_4s/i_init was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_4s/i_init_value was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_4s/o_endcount was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_4s/o_count was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_4s/counter_reg was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_4s/G_SIZE was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_2s/enb was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_2s/rst was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_2s/clk was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_2s/i_init was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_2s/i_init_value was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_2s/o_endcount was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_2s/o_count was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_2s/counter_reg was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_2s/G_SIZE was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_counter_1s/G_MAX was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_mux/i_counter_2s was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_mux/i_counter_4s was not found in the design.
+WARNING: Simulation object /tb_top/u_top/u_operative/u_mux/i_counter_9s was not found in the design.
+source tb_top.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:23 . Memory (MB): peak = 763.926 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_top_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:50 . Memory (MB): peak = 763.926 ; gain = 0.000
+run 1 us
+add_wave {{/tb_top/u_top/u_operative/u_counter_7s}} 
+add_wave {{/tb_top/u_top/u_operative/u_counter_5s}} 
+add_wave {{/tb_top/u_top/u_operative/u_counter_3s}} 
+save_wave_config {D:/imt/vhdl-imt/carrefour/tb_top_behav.wcfg}
+add_wave {{/tb_top/u_top/u_operative/u_counter_1s}} 
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:22 . Memory (MB): peak = 806.883 ; gain = 0.000
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/imt/vhdl-imt/carrefour/carrefour.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/deco.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity deco
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter_sec
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter_1s.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter_1s
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity control
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity operative
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sim_1/new/tb_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/imt/vhdl-imt/carrefour/carrefour.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto ec2ebf6a36e14c9b9314c960bb11de97 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_1s [\counter_1s(g_size=5,g_max=1)\]
+Compiling architecture behavioral of entity xil_defaultlib.counter_sec [counter_sec_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux [mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.deco [deco_default]
+Compiling architecture behavioral of entity xil_defaultlib.operative [operative_default]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 806.883 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '21' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 806.883 ; gain = 0.000
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+relaunch_xsim_kernel: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 806.883 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:01:05 . Memory (MB): peak = 806.883 ; gain = 0.000
+save_wave_config {D:/imt/vhdl-imt/carrefour/tb_top_behav.wcfg}
+relaunch_sim
+suspend_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 806.883 ; gain = 0.000
+INFO: [USF-XSim-27] Simulation object is 'sim_1'
+INFO: [USF-XSim-37] Inspecting design source files for 'tb_top' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/imt/vhdl-imt/carrefour/carrefour.sim/sim_1/behav'
+"xvhdl -m64 --relax -prj tb_top_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/mux.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mux
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/deco.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity deco
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter_sec.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter_sec
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter_1s.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity counter_1s
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/control.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity control
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/operative.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity operative
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity top
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/carrefour/carrefour.srcs/sim_1/new/tb_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_top
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/imt/vhdl-imt/carrefour/carrefour.sim/sim_1/behav'
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto ec2ebf6a36e14c9b9314c960bb11de97 --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture behavioral of entity xil_defaultlib.counter_1s [\counter_1s(g_size=5,g_max=1)\]
+Compiling architecture behavioral of entity xil_defaultlib.counter_sec [counter_sec_default]
+Compiling architecture behavioral of entity xil_defaultlib.mux [mux_default]
+Compiling architecture behavioral of entity xil_defaultlib.deco [deco_default]
+Compiling architecture behavioral of entity xil_defaultlib.operative [operative_default]
+Compiling architecture behavioral of entity xil_defaultlib.control [control_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 806.883 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '21' seconds
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 806.883 ; gain = 0.000
+Vivado Simulator 2016.1
+Time resolution is 1 ps
+relaunch_xsim_kernel: Time (s): cpu = 00:00:00 ; elapsed = 00:00:21 . Memory (MB): peak = 806.883 ; gain = 0.000
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:01:05 . Memory (MB): peak = 806.883 ; gain = 0.000
+save_wave_config {D:/imt/vhdl-imt/carrefour/tb_top_behav.wcfg}
+run 1 us
+save_wave_config {D:/imt/vhdl-imt/carrefour/tb_top_behav.wcfg}
+remove_files D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter.vhd
+file delete -force D:/imt/vhdl-imt/carrefour/carrefour.srcs/sources_1/new/counter.vhd
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 02:34:50 . Memory (MB): peak = 806.883 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Apr 21 18:31:47 2018...
