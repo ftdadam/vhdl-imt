@@ -3,8 +3,8 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.NUMERIC_STD.ALL;
 
 entity addr_counter is
-generic(NB_COUNTER : integer := 10; --- nombre de bits
-        MAX : integer := 1000--- peut compter jusqu'à MAX inclus
+generic(NB_COUNTER : integer := 19;
+        MAX : integer := 307200
 );
 port (  enb : in STD_LOGIC;
         rst : in STD_LOGIC;

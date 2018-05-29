@@ -1,8 +1,3 @@
-
---  Xilinx Simple Dual Port Single Clock RAM
---  This code implements a parameterizable SDP single clock memory.
---  If a reset or enable is not necessary, it may be tied off or removed from the code.
-
 library ieee;
 use ieee.std_logic_1164.all;
 
@@ -34,10 +29,10 @@ USE std.textio.all;
 
 entity bram is
 generic (
-    RAM_WIDTH : integer := 64;                      -- Specify RAM data width
-    RAM_DEPTH : integer := 512;                    -- Specify RAM depth (number of entries)
-    RAM_PERFORMANCE : string := "LOW_LATENCY";      -- Select "HIGH_PERFORMANCE" or "LOW_LATENCY" 
-    INIT_FILE : string := "RAM_INIT.dat"                        -- Specify name/location of RAM initialization file if using one (leave blank if not)
+    RAM_WIDTH : integer := 12;                      -- Specify RAM data width
+    RAM_DEPTH : integer := 2**19;                    -- Specify RAM depth (number of entries)
+    RAM_PERFORMANCE : string := "HIGH_PERFORMANCE";      -- Select "HIGH_PERFORMANCE" or "LOW_LATENCY" 
+    INIT_FILE : string := ""                        -- Specify name/location of RAM initialization file if using one (leave blank if not)
     );
 
 port (

@@ -8,7 +8,12 @@ port (
         rst : in STD_LOGIC;
         enb : in STD_LOGIC;
         i_button_up : in STD_LOGIC;
-        i_button_down : in STD_LOGIC
+        i_button_down : in STD_LOGIC;
+        i_h_count : in STD_LOGIC_VECTOR (11-1 downto 0);
+        i_v_count : in STD_LOGIC_VECTOR (11-1 downto 0);
+        o_lives : out STD_LOGIC_VECTOR (2 downto 0);
+        o_game_over : out STD_LOGIC;
+        o_rgb : out STD_LOGIC_VECTOR (12-1 downto 0)
 );
 end game_controller;
 
@@ -40,8 +45,13 @@ port (
         clk : in STD_LOGIC;
         rst : in STD_LOGIC;
         enb : in STD_LOGIC;
+        i_h_count : in STD_LOGIC_VECTOR (11 - 1 downto 0);  --CAMBIAR LONG
+        i_v_count : in STD_LOGIC_VECTOR (11 - 1 downto 0);  --CAMBIAR LONG
+        i_player_vector : in STD_LOGIC_VECTOR (N_H_LANES - 1 downto 0);
+        i_game_over : in STD_LOGIC;
         i_obstacle_bit : in STD_LOGIC_VECTOR (0 downto 0);
         i_obstacle_line : in STD_LOGIC_VECTOR (NB_LINE_SELECTION-1 downto 0);
+        o_rgb_data : out STD_LOGIC_VECTOR (12-1 downto 0);
         o_board_end_vector : out STD_LOGIC_VECTOR (N_H_LANES-1 downto 0)
 );
 end component;
@@ -70,6 +80,7 @@ port (
     enb : in STD_LOGIC;
     i_player_vect : in STD_LOGIC_VECTOR (N_H_LANES-1 downto 0);
     i_board_vect : in STD_LOGIC_VECTOR (N_H_LANES-1 downto 0);
+    o_lives : out STD_LOGIC_VECTOR (2 downto 0);
     o_game_over : out STD_LOGIC
 );
 end component;
@@ -90,6 +101,8 @@ signal connect_obj_gen_to_board : STD_LOGIC_VECTOR (NB_OUT_OBJ_GEN-1 downto 0);
 signal connect_board_to_collition : STD_LOGIC_VECTOR (N_H_LANES-1 downto 0);
 signal connect_player_to_collition : STD_LOGIC_VECTOR (N_H_LANES-1 downto 0);
 signal connect_game_over : STD_LOGIC;
+signal connect_rgb_data : STD_LOGIC_VECTOR (12-1 downto 0);
+signal connect_o_lives : STD_LOGIC_VECTOR (2 downto 0);
 
 begin
 
@@ -136,9 +149,14 @@ port map(
     clk => clk,
     rst => rst,
     enb => enb,
+    i_h_count => i_h_count,
+    i_v_count => i_v_count,
+    i_player_vector => connect_player_to_collition,
+    i_game_over => connect_game_over,
     i_obstacle_bit => connect_obj_gen_to_board,
     i_obstacle_line => connect_lane_gen_to_board,
-    o_board_end_vector => connect_board_to_collition
+    o_board_end_vector => connect_board_to_collition,
+    o_rgb_data => connect_rgb_data
 );
 
 player : player_vector
@@ -146,12 +164,12 @@ generic map(
     N_H_LANES => N_H_LANES
 )
 port map(
-clk => clk,
-rst => rst,
-enb => enb,
-i_button_down => i_button_down,
-i_button_up => i_button_up,
-o_player_vect => connect_player_to_collition
+    clk => clk,
+    rst => rst,
+    enb => enb,
+    i_button_down => i_button_down,
+    i_button_up => i_button_up,
+    o_player_vect => connect_player_to_collition
 );
 
 collision_control : collision
@@ -164,7 +182,12 @@ port map(
     enb => enb,
     i_player_vect => connect_player_to_collition,
     i_board_vect => connect_board_to_collition,
+    o_lives => connect_o_lives,
     o_game_over => connect_game_over
 );
+
+o_rgb <= connect_rgb_data;
+o_lives <= connect_o_lives;
+o_game_over <= connect_game_over;
 
 end Behavioral;

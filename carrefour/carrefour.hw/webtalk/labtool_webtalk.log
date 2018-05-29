@@ -4,6 +4,6 @@
   **** IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 
-source D:/imt/carrefour/carrefour.hw/webtalk/labtool_webtalk.tcl -notrace
+source D:/imt/vhdl-imt/carrefour/carrefour.hw/webtalk/labtool_webtalk.tcl -notrace
 Acceso denegado.
-INFO: [Common 17-206] Exiting Webtalk at Tue Apr 17 23:21:45 2018...
+INFO: [Common 17-206] Exiting Webtalk at Thu May 24 09:05:37 2018...
