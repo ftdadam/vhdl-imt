@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
-| Date         : Thu May 24 10:20:56 2018
+| Date         : Wed May 30 11:41:23 2018
 | Host         : DESKTOP-8T38IV2 running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_drc_opted.rpt
 | Design       : top
@@ -23,7 +23,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 1
+             Violations found: 3
 
 2. REPORT DETAILS
 -----------------
@@ -38,6 +38,22 @@ Neither the CFGBVS nor CONFIG_VOLTAGE voltage property is set in the current_des
  #where value2 is the voltage provided to configuration bank 0
 
 Refer to the device configuration user guide for more information.
+Related violations: <none>
+
+PLHOLDVIO-2#1 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT u_player_tick_gen/player_vect[7]_i_3 is driving clock pin of 8 cells. This could lead to large hold time violations. First few involved cells are:
+    u_game_controller/player/player_vect_reg[0] {FDCE}
+    u_game_controller/player/player_vect_reg[1] {FDCE}
+    u_game_controller/player/player_vect_reg[2] {FDCE}
+    u_game_controller/player/player_vect_reg[3] {FDCE}
+    u_game_controller/player/player_vect_reg[4] {FDPE}
+
+Related violations: <none>
+
+PLIO-7#1 Warning
+Placement Constraints Check for IO constraints  
+An IO Bus SW[15:0] with more than one IO standard is found. Components associated with this bus are: LVCMOS18 (SW[9], SW[8]); LVCMOS33 (SW[15], SW[14], SW[13], SW[12], SW[11], SW[10], SW[7], SW[6], SW[5], SW[4], SW[3], SW[2], SW[1], SW[0]); 
 Related violations: <none>
 
 

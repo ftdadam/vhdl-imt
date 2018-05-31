@@ -10,18 +10,22 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="823000001fs"></ZoomEndTime>
-      <Cursor1Time time="0fs"></Cursor1Time>
+      <ZoomStartTime time="48317319862fs"></ZoomStartTime>
+      <ZoomEndTime time="50867512691fs"></ZoomEndTime>
+      <Cursor1Time time="48742352000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="10" />
+   <WVObjectSize size="17" />
    <wvobject fp_name="/tb_top/CLK100MHZ" type="logic">
       <obj_property name="ElementShortName">CLK100MHZ</obj_property>
       <obj_property name="ObjectShortName">CLK100MHZ</obj_property>
    </wvobject>
+   <wvobject fp_name="/tb_top/u_top/pixel_clk" type="logic">
+      <obj_property name="ElementShortName">pixel_clk</obj_property>
+      <obj_property name="ObjectShortName">pixel_clk</obj_property>
+   </wvobject>
    <wvobject fp_name="/tb_top/u_top/SW" type="array">
-      <obj_property name="ElementShortName">SW[1:0]</obj_property>
-      <obj_property name="ObjectShortName">SW[1:0]</obj_property>
+      <obj_property name="ElementShortName">SW[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SW[15:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/u_top/u_game_controller/enb" type="logic">
@@ -31,6 +35,10 @@
    <wvobject fp_name="/tb_top/u_top/u_game_controller/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/u_top/u_tick_gen/o_endcount" type="logic">
+      <obj_property name="ElementShortName">o_endcount</obj_property>
+      <obj_property name="ObjectShortName">o_endcount</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/u_top/u_game_controller/board/board" type="array">
       <obj_property name="ElementShortName">board[7:0][15:0]</obj_property>
@@ -55,5 +63,26 @@
    <wvobject fp_name="/tb_top/u_top/u_game_controller/collision_control/collision" type="logic">
       <obj_property name="ElementShortName">collision</obj_property>
       <obj_property name="ObjectShortName">collision</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/u_top/u_game_controller/u_bin2bcd/i_binary" type="array">
+      <obj_property name="ElementShortName">i_binary[11:0]</obj_property>
+      <obj_property name="ObjectShortName">i_binary[11:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/u_top/u_game_controller/u_bin2bcd/o_digit_0" type="array">
+      <obj_property name="ElementShortName">o_digit_0[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o_digit_0[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/u_top/u_game_controller/u_bin2bcd/o_digit_1" type="array">
+      <obj_property name="ElementShortName">o_digit_1[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o_digit_1[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/u_top/u_game_controller/u_bin2bcd/o_digit_2" type="array">
+      <obj_property name="ElementShortName">o_digit_2[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o_digit_2[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/u_top/u_game_controller/u_bin2bcd/o_digit_3" type="array">
+      <obj_property name="ElementShortName">o_digit_3[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o_digit_3[3:0]</obj_property>
    </wvobject>
 </wave_config>

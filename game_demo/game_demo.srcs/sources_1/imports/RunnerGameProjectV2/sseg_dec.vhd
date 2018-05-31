@@ -55,10 +55,10 @@ architecture my_sseg of sseg_dec is
 	end component;
 	
    -- intermediate signal declaration -----------------------
-   signal   cnt_dig : std_logic_vector(1 downto 0); 
-   signal   digit : std_logic_vector (3 downto 0); 
-   signal   lsd,msd,mmsd : std_logic_vector(3 downto 0); 
-	signal   sclk : std_logic; 
+signal   cnt_dig : std_logic_vector(1 downto 0); 
+signal   digit : std_logic_vector (3 downto 0); 
+signal   lsd,msd,mmsd : std_logic_vector(3 downto 0); 
+signal   sclk : std_logic; 
 
 begin
 
@@ -93,8 +93,8 @@ begin
                "00011111" when digit = "0111"  else
                "00000001" when digit = "1000"  else
                "00001001" when digit = "1001"  else
-					"11111101" when digit = "1110" else   -- dash
-					"11111111" when digit = "1110" else   -- blank
+               "11111101" when digit = "1110" else   -- dash
+               "11111111" when digit = "1110" else   -- blank
                "11111111"; 
 
    -- actuate the correct display --------------------------

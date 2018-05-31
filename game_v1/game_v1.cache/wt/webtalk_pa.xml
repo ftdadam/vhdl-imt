@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Thu May 24 10:43:02 2018">
+<application name="pa" timeStamp="Wed May 30 11:54:47 2018">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="f0673b5327f94f7f86e40e8ab25bc5ac" type="ProjectID"/>
-<property name="ProjectIteration" value="13" type="ProjectIteration"/>
+<property name="ProjectIteration" value="21" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -17,50 +17,45 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
 </item>
 <item name="Java Command Handlers">
-<property name="AddSources" value="16" type="JavaHandler"/>
-<property name="AutoConnectTarget" value="4" type="JavaHandler"/>
-<property name="CloseProject" value="4" type="JavaHandler"/>
+<property name="AddSources" value="19" type="JavaHandler"/>
+<property name="AutoConnectTarget" value="9" type="JavaHandler"/>
+<property name="CloseProject" value="5" type="JavaHandler"/>
 <property name="CoreView" value="2" type="JavaHandler"/>
 <property name="CustomizeCore" value="1" type="JavaHandler"/>
 <property name="EditDelete" value="3" type="JavaHandler"/>
 <property name="EditRedo" value="82" type="JavaHandler"/>
-<property name="EditUndo" value="2" type="JavaHandler"/>
-<property name="LaunchProgramFpga" value="5" type="JavaHandler"/>
+<property name="EditUndo" value="5" type="JavaHandler"/>
+<property name="LaunchProgramFpga" value="11" type="JavaHandler"/>
 <property name="NewProject" value="2" type="JavaHandler"/>
-<property name="OpenHardwareManager" value="10" type="JavaHandler"/>
-<property name="OpenRecentTarget" value="4" type="JavaHandler"/>
-<property name="ProgramDevice" value="4" type="JavaHandler"/>
+<property name="OpenHardwareManager" value="16" type="JavaHandler"/>
+<property name="OpenRecentTarget" value="9" type="JavaHandler"/>
+<property name="ProgramDevice" value="5" type="JavaHandler"/>
 <property name="ProjectSettingsCmdHandler" value="2" type="JavaHandler"/>
 <property name="RecustomizeCore" value="2" type="JavaHandler"/>
-<property name="RunBitgen" value="13" type="JavaHandler"/>
+<property name="RunBitgen" value="21" type="JavaHandler"/>
 <property name="RunImplementation" value="1" type="JavaHandler"/>
-<property name="RunSynthesis" value="8" type="JavaHandler"/>
-<property name="SaveFileProxyHandler" value="11" type="JavaHandler"/>
+<property name="RunSynthesis" value="19" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="16" type="JavaHandler"/>
 <property name="SetSourceEnabled" value="6" type="JavaHandler"/>
-<property name="ShowView" value="2" type="JavaHandler"/>
+<property name="ShowView" value="9" type="JavaHandler"/>
 <property name="SimulationClose" value="1" type="JavaHandler"/>
 <property name="SimulationRelaunch" value="76" type="JavaHandler"/>
 <property name="SimulationRun" value="29" type="JavaHandler"/>
 <property name="SimulationRunForTime" value="17" type="JavaHandler"/>
-<property name="ToggleViewNavigator" value="4" type="JavaHandler"/>
+<property name="ToggleViewNavigator" value="6" type="JavaHandler"/>
 <property name="ToolsOptions" value="1" type="JavaHandler"/>
 <property name="ToolsTemplates" value="1" type="JavaHandler"/>
 <property name="UpdateRegId" value="1" type="JavaHandler"/>
 <property name="WaveformSaveConfiguration" value="12" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Program and Debug, Hardware Manager, Program Device], 37, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.ProgramFpgaDialog_PROGRAM, Program" value="1" type="GuiResourceData"/>
-<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="2" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 551, 95" value="1" type="GuiResourceData"/>
-<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, tb_game_controller_behav.wcfg*" value="1" type="GuiResourceData"/>
-<property name="board_matrix.vhd, 198, 95" value="1" type="GuiResourceData"/>
-<property name="board_matrix.vhd, 432, 269" value="1" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="1" type="GuiResourceData"/>
+<property name="RDIResource.QuickHelp_HELP, (String" value="1" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="455" type="GuiMode"/>
+<property name="GuiMode" value="456" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="421" type="TclMode"/>
+<property name="TclMode" value="422" type="TclMode"/>
 </item>
 </section>
 </application>

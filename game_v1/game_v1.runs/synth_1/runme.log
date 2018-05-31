@@ -14,18 +14,18 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 6336 
+INFO: Helper process launched with PID 10308 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 282.469 ; gain = 75.918
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 281.664 ; gain = 74.684
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'top' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/top.vhd:20]
-INFO: [Synth 8-3491] module 'game_controller' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd:5' bound to instance 'u_game_controller' of component 'game_controller' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/top.vhd:77]
-INFO: [Synth 8-638] synthesizing module 'game_controller' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd:20]
+INFO: [Synth 8-3491] module 'game_controller' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd:5' bound to instance 'u_game_controller' of component 'game_controller' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/top.vhd:92]
+INFO: [Synth 8-638] synthesizing module 'game_controller' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd:23]
 	Parameter TAP_0 bound to: 15 - type: integer 
 	Parameter TAP_1 bound to: 14 - type: integer 
 	Parameter NB_OUT bound to: 3 - type: integer 
 	Parameter NB_PRBS bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'prbs' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/prbs.vhd:5' bound to instance 'lane_generator' of component 'prbs' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd:112]
+INFO: [Synth 8-3491] module 'prbs' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/prbs.vhd:5' bound to instance 'lane_generator' of component 'prbs' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd:125]
 INFO: [Synth 8-638] synthesizing module 'prbs' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/prbs.vhd:21]
 	Parameter TAP_0 bound to: 15 - type: integer 
 	Parameter TAP_1 bound to: 14 - type: integer 
@@ -36,7 +36,7 @@ INFO: [Synth 8-256] done synthesizing module 'prbs' (1#1) [D:/imt/vhdl-imt/game_
 	Parameter TAP_1 bound to: 14 - type: integer 
 	Parameter NB_OUT bound to: 1 - type: integer 
 	Parameter NB_PRBS bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'prbs' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/prbs.vhd:5' bound to instance 'object_generator' of component 'prbs' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd:127]
+INFO: [Synth 8-3491] module 'prbs' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/prbs.vhd:5' bound to instance 'object_generator' of component 'prbs' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd:140]
 INFO: [Synth 8-638] synthesizing module 'prbs__parameterized1' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/prbs.vhd:21]
 	Parameter TAP_0 bound to: 15 - type: integer 
 	Parameter TAP_1 bound to: 14 - type: integer 
@@ -46,24 +46,29 @@ INFO: [Synth 8-256] done synthesizing module 'prbs__parameterized1' (1#1) [D:/im
 	Parameter N_H_LANES bound to: 8 - type: integer 
 	Parameter N_V_LANES bound to: 16 - type: integer 
 	Parameter NB_LINE_SELECTION bound to: 3 - type: integer 
-INFO: [Synth 8-3491] module 'board_matrix' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/board_matrix.vhd:7' bound to instance 'board' of component 'board_matrix' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd:142]
+INFO: [Synth 8-3491] module 'board_matrix' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/board_matrix.vhd:7' bound to instance 'board' of component 'board_matrix' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd:155]
 INFO: [Synth 8-638] synthesizing module 'board_matrix' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/board_matrix.vhd:28]
 	Parameter N_H_LANES bound to: 8 - type: integer 
 	Parameter N_V_LANES bound to: 16 - type: integer 
 	Parameter NB_LINE_SELECTION bound to: 3 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'board_matrix' (2#1) [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/board_matrix.vhd:28]
 	Parameter N_H_LANES bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'player_vector' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/player_vector.vhd:6' bound to instance 'player' of component 'player_vector' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd:162]
+INFO: [Synth 8-3491] module 'player_vector' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/player_vector.vhd:6' bound to instance 'player' of component 'player_vector' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd:175]
 INFO: [Synth 8-638] synthesizing module 'player_vector' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/player_vector.vhd:20]
 	Parameter N_H_LANES bound to: 8 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'player_vector' (3#1) [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/player_vector.vhd:20]
 	Parameter N_H_LANES bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'collision' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/collision.vhd:6' bound to instance 'collision_control' of component 'collision' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd:175]
+INFO: [Synth 8-3491] module 'collision' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/collision.vhd:6' bound to instance 'collision_control' of component 'collision' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd:188]
 INFO: [Synth 8-638] synthesizing module 'collision' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/collision.vhd:21]
 	Parameter N_H_LANES bound to: 8 - type: integer 
 INFO: [Synth 8-256] done synthesizing module 'collision' (4#1) [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/collision.vhd:21]
-INFO: [Synth 8-256] done synthesizing module 'game_controller' (5#1) [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd:20]
-INFO: [Synth 8-3491] module 'clk_wiz_v3_6' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/clk_wiz_v3_6.vhd:74' bound to instance 'pixel_clock' of component 'clk_wiz_v3_6' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/top.vhd:91]
+INFO: [Synth 8-3491] module 'score' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/score.vhd:5' bound to instance 'score_counter' of component 'score' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd:202]
+INFO: [Synth 8-638] synthesizing module 'score' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/score.vhd:17]
+	Parameter NB_COUNTER bound to: 12 - type: integer 
+	Parameter MAX bound to: 4095 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'score' (5#1) [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/score.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'game_controller' (6#1) [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd:23]
+INFO: [Synth 8-3491] module 'clk_wiz_v3_6' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/clk_wiz_v3_6.vhd:74' bound to instance 'pixel_clock' of component 'clk_wiz_v3_6' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/top.vhd:109]
 INFO: [Synth 8-638] synthesizing module 'clk_wiz_v3_6' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/clk_wiz_v3_6.vhd:83]
 	Parameter CAPACITANCE bound to: DONT_CARE - type: string 
 	Parameter IBUF_DELAY_VALUE bound to: 0 - type: string 
@@ -100,16 +105,20 @@ INFO: [Synth 8-113] binding component instance 'clkin1_buf' to cell 'IBUFG' [D:/
 INFO: [Synth 8-113] binding component instance 'pll_base_inst' to cell 'PLL_BASE' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/clk_wiz_v3_6.vhd:117]
 INFO: [Synth 8-113] binding component instance 'clkf_buf' to cell 'BUFG' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/clk_wiz_v3_6.vhd:147]
 INFO: [Synth 8-113] binding component instance 'clkout1_buf' to cell 'BUFG' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/clk_wiz_v3_6.vhd:153]
-INFO: [Synth 8-256] done synthesizing module 'clk_wiz_v3_6' (6#1) [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/clk_wiz_v3_6.vhd:83]
-INFO: [Synth 8-3491] module 'tick_gen' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/tick_generator.vhd:5' bound to instance 'u_tick_gen' of component 'tick_gen' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/top.vhd:97]
-INFO: [Synth 8-638] synthesizing module 'tick_gen' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/tick_generator.vhd:17]
-	Parameter NB_COUNTER bound to: 25 - type: integer 
-	Parameter MAX bound to: 12500000 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'tick_gen' (7#1) [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/tick_generator.vhd:17]
-INFO: [Synth 8-3491] module 'vga_controller_640_60' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/vga_controller.vhd:75' bound to instance 'u_vga_contoller' of component 'vga_controller_640_60' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/top.vhd:105]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_v3_6' (7#1) [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/clk_wiz_v3_6.vhd:83]
+INFO: [Synth 8-3491] module 'tick_gen' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/tick_generator.vhd:7' bound to instance 'u_tick_gen' of component 'tick_gen' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/top.vhd:115]
+INFO: [Synth 8-638] synthesizing module 'tick_gen' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/tick_generator.vhd:19]
+	Parameter NB_COUNTER bound to: 26 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'tick_gen' (8#1) [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/tick_generator.vhd:19]
+INFO: [Synth 8-3491] module 'player_tick_gen' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/player_tick_gen.vhd:5' bound to instance 'u_player_tick_gen' of component 'player_tick_gen' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/top.vhd:124]
+INFO: [Synth 8-638] synthesizing module 'player_tick_gen' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/player_tick_gen.vhd:17]
+	Parameter NB_COUNTER bound to: 21 - type: integer 
+	Parameter MAX bound to: 1562500 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'player_tick_gen' (9#1) [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/player_tick_gen.vhd:17]
+INFO: [Synth 8-3491] module 'vga_controller_640_60' declared at 'D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/vga_controller.vhd:75' bound to instance 'u_vga_contoller' of component 'vga_controller_640_60' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/top.vhd:131]
 INFO: [Synth 8-638] synthesizing module 'vga_controller_640_60' [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/vga_controller.vhd:88]
-INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (8#1) [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/vga_controller.vhd:88]
-INFO: [Synth 8-256] done synthesizing module 'top' (9#1) [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/top.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'vga_controller_640_60' (10#1) [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/vga_controller.vhd:88]
+INFO: [Synth 8-256] done synthesizing module 'top' (11#1) [D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/top.vhd:20]
 WARNING: [Synth 8-3917] design top has port LED[12] driven by constant 0
 WARNING: [Synth 8-3917] design top has port LED[11] driven by constant 0
 WARNING: [Synth 8-3917] design top has port LED[10] driven by constant 0
@@ -122,7 +131,7 @@ WARNING: [Synth 8-3917] design top has port LED[4] driven by constant 0
 WARNING: [Synth 8-3917] design top has port LED[3] driven by constant 0
 WARNING: [Synth 8-3917] design top has port LED[2] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 351.152 ; gain = 144.602
+Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:14 . Memory (MB): peak = 350.352 ; gain = 143.371
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -132,7 +141,7 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 351.152 ; gain = 144.602
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 350.352 ; gain = 143.371
 ---------------------------------------------------------------------------------
 INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -153,28 +162,28 @@ INFO: [Project 1-111] Unisim Transformation Summary:
   IBUFG => IBUF: 1 instances
   PLL_BASE => MMCME2_ADV: 1 instances
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 626.883 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 627.043 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "o_lives" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5545] ROM "game_over" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
 INFO: [Synth 8-5546] ROM "o_endcount" won't be mapped to RAM because it is too sparse
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -187,18 +196,24 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     25 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 1     
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
 	   2 Input     11 Bit       Adders := 2     
 +---XORs : 
 	   2 Input      1 Bit         XORs := 2     
 +---Registers : 
-	               25 Bit    Registers := 1     
+	               26 Bit    Registers := 2     
+	               21 Bit    Registers := 1     
 	               16 Bit    Registers := 10    
 	               11 Bit    Registers := 2     
 	                8 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input     25 Bit        Muxes := 2     
+	   5 Input     26 Bit        Muxes := 1     
+	   2 Input     26 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 2     
 	   2 Input     16 Bit        Muxes := 12    
 	   7 Input     12 Bit        Muxes := 1     
 	   2 Input      8 Bit        Muxes := 1     
@@ -250,14 +265,33 @@ Detailed RTL Component Info :
 	   2 Input      3 Bit        Muxes := 1     
 	   4 Input      3 Bit        Muxes := 1     
 	   2 Input      1 Bit        Muxes := 1     
+Module score 
+Detailed RTL Component Info : 
++---Registers : 
+	               26 Bit    Registers := 1     
++---Muxes : 
+	   5 Input     26 Bit        Muxes := 1     
+Module game_controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 1     
 Module tick_gen 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     25 Bit       Adders := 1     
+	   2 Input     26 Bit       Adders := 1     
 +---Registers : 
-	               25 Bit    Registers := 1     
+	               26 Bit    Registers := 1     
 +---Muxes : 
-	   2 Input     25 Bit        Muxes := 2     
+	   2 Input     26 Bit        Muxes := 2     
+Module player_tick_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 2     
 	   2 Input      1 Bit        Muxes := 1     
 Module vga_controller_640_60 
 Detailed RTL Component Info : 
@@ -280,12 +314,12 @@ BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
 ---------------------------------------------------------------------------------
 Finished Part Resource Summary
 ---------------------------------------------------------------------------------
-Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 626.883 ; gain = 420.332
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:22 ; elapsed = 00:00:25 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
 Start Cross Boundary Optimization
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5545] ROM "u_game_controller/collision_control/game_over" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
-INFO: [Synth 8-5546] ROM "u_tick_gen/o_endcount" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "u_player_tick_gen/o_endcount" won't be mapped to RAM because it is too sparse
 WARNING: [Synth 8-3917] design top has port LED[12] driven by constant 0
 WARNING: [Synth 8-3917] design top has port LED[11] driven by constant 0
 WARNING: [Synth 8-3917] design top has port LED[10] driven by constant 0
@@ -298,9 +332,9 @@ WARNING: [Synth 8-3917] design top has port LED[4] driven by constant 0
 WARNING: [Synth 8-3917] design top has port LED[3] driven by constant 0
 WARNING: [Synth 8-3917] design top has port LED[2] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
-Finished Parallel Reinference  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished Parallel Reinference  : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 627.043 ; gain = 420.063
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -310,10 +344,32 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Area Optimization
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'u_game_controller/score_counter/tick_gen_max_reg[0]' (FDE) to 'u_game_controller/score_counter/tick_gen_max_reg[24]'
+INFO: [Synth 8-3886] merging instance 'u_game_controller/score_counter/tick_gen_max_reg[1]' (FDE) to 'u_game_controller/score_counter/tick_gen_max_reg[2]'
+INFO: [Synth 8-3886] merging instance 'u_game_controller/score_counter/tick_gen_max_reg[2]' (FDE) to 'u_game_controller/score_counter/tick_gen_max_reg[14]'
+INFO: [Synth 8-3886] merging instance 'u_game_controller/score_counter/tick_gen_max_reg[7]' (FDE) to 'u_game_controller/score_counter/tick_gen_max_reg[22]'
+INFO: [Synth 8-3886] merging instance 'u_game_controller/score_counter/tick_gen_max_reg[8]' (FDE) to 'u_game_controller/score_counter/tick_gen_max_reg[16]'
+INFO: [Synth 8-3886] merging instance 'u_game_controller/score_counter/tick_gen_max_reg[11]' (FDE) to 'u_game_controller/score_counter/tick_gen_max_reg[18]'
+INFO: [Synth 8-3886] merging instance 'u_game_controller/score_counter/tick_gen_max_reg[12]' (FDE) to 'u_game_controller/score_counter/tick_gen_max_reg[20]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\u_game_controller/score_counter/tick_gen_max_reg[17] )
+INFO: [Synth 8-3886] merging instance 'u_game_controller/score_counter/tick_gen_max_reg[18]' (FDE) to 'u_game_controller/score_counter/tick_gen_max_reg[19]'
+INFO: [Synth 8-3886] merging instance 'u_game_controller/score_counter/tick_gen_max_reg[24]' (FDE) to 'u_game_controller/score_counter/tick_gen_max_reg[25]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\u_game_controller/score_counter/tick_gen_max_reg[25] )
+WARNING: [Synth 8-3332] Sequential element (u_game_controller/score_counter/tick_gen_max_reg[25]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_game_controller/score_counter/tick_gen_max_reg[24]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_game_controller/score_counter/tick_gen_max_reg[18]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_game_controller/score_counter/tick_gen_max_reg[17]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_game_controller/score_counter/tick_gen_max_reg[12]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_game_controller/score_counter/tick_gen_max_reg[11]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_game_controller/score_counter/tick_gen_max_reg[8]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_game_controller/score_counter/tick_gen_max_reg[7]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_game_controller/score_counter/tick_gen_max_reg[2]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_game_controller/score_counter/tick_gen_max_reg[1]) is unused and will be removed from module top.
+WARNING: [Synth 8-3332] Sequential element (u_game_controller/score_counter/tick_gen_max_reg[0]) is unused and will be removed from module top.
 ---------------------------------------------------------------------------------
-Finished Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished Area Optimization : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
-Finished Parallel Area Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:25 ; elapsed = 00:00:28 . Memory (MB): peak = 627.043 ; gain = 420.063
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
@@ -329,10 +385,10 @@ Start Applying XDC Timing Constraints
 WARNING: [Synth 8-3321] create_generated_clock : Empty source list for constraint at line  of auto generated constraint. [auto generated constraint:]
 WARNING: [Synth 8-3321] create_generated_clock : Empty source list for constraint at line  of auto generated constraint. [auto generated constraint:]
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -344,16 +400,16 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
-Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 627.043 ; gain = 420.063
 
 Report RTL Partitions: 
 +-+--------------+------------+----------+
 | |RTL Partition |Replication |Instances |
 +-+--------------+------------+----------+
 +-+--------------+------------+----------+
-Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
 Start IO Insertion
 ---------------------------------------------------------------------------------
@@ -370,7 +426,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished IO Insertion : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -383,7 +439,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -395,40 +451,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 626.883 ; gain = 420.332
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-Static Shift Register Report:
-+------------+------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|Module Name | RTL Name                                             | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
-+------------+------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-|top         | u_game_controller/object_generator/shift_reg_reg[14] | 4      | 1     | YES          | NO                 | YES               | 1      | 0       | 
-|top         | u_game_controller/lane_generator/shift_reg_reg[11]   | 5      | 1     | YES          | NO                 | YES               | 1      | 0       | 
-+------------+------------------------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -445,19 +486,19 @@ Report Cell Usage:
 |      |Cell     |Count |
 +------+---------+------+
 |1     |BUFG     |     3|
-|2     |CARRY4   |    17|
-|3     |LUT1     |    58|
-|4     |LUT2     |    27|
-|5     |LUT3     |    29|
-|6     |LUT4     |    54|
-|7     |LUT5     |    36|
-|8     |LUT6     |   128|
+|2     |CARRY4   |    41|
+|3     |LUT1     |   119|
+|4     |LUT2     |    99|
+|5     |LUT3     |   102|
+|6     |LUT4     |    71|
+|7     |LUT5     |    85|
+|8     |LUT6     |   126|
 |9     |PLL_BASE |     1|
-|10    |SRL16E   |     2|
-|11    |FDCE     |   207|
-|12    |FDPE     |    19|
-|13    |FDRE     |    26|
-|14    |IBUF     |     4|
+|10    |FDCE     |   256|
+|11    |FDPE     |    34|
+|12    |FDRE     |    39|
+|13    |LDC      |    30|
+|14    |IBUF     |    18|
 |15    |IBUFG    |     1|
 |16    |OBUF     |    30|
 +------+---------+------+
@@ -466,36 +507,39 @@ Report Instance Areas:
 +------+----------------------+----------------------+------+
 |      |Instance              |Module                |Cells |
 +------+----------------------+----------------------+------+
-|1     |top                   |                      |   642|
+|1     |top                   |                      |  1055|
 |2     |  pixel_clock         |clk_wiz_v3_6          |     4|
-|3     |  u_game_controller   |game_controller       |   314|
+|3     |  u_game_controller   |game_controller       |   615|
 |4     |    board             |board_matrix          |   134|
 |5     |    collision_control |collision             |    99|
-|6     |    lane_generator    |prbs                  |    28|
-|7     |    object_generator  |prbs__parameterized1  |    20|
-|8     |    player            |player_vector         |    33|
-|9     |  u_tick_gen          |tick_gen              |    89|
-|10    |  u_vga_contoller     |vga_controller_640_60 |   200|
+|6     |    lane_generator    |prbs                  |   115|
+|7     |    object_generator  |prbs__parameterized1  |   107|
+|8     |    player            |player_vector         |    36|
+|9     |    score_counter     |score                 |    90|
+|10    |  u_player_tick_gen   |player_tick_gen       |    77|
+|11    |  u_tick_gen          |tick_gen              |   110|
+|12    |  u_vga_contoller     |vga_controller_640_60 |   200|
 +------+----------------------+----------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 626.883 ; gain = 420.332
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 627.043 ; gain = 420.063
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 13 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:31 . Memory (MB): peak = 626.883 ; gain = 144.602
-Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 626.883 ; gain = 420.332
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:30 . Memory (MB): peak = 627.043 ; gain = 143.371
+Synthesis Optimization Complete : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 627.043 ; gain = 420.063
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 23 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 91 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 2 instances were transformed.
+  A total of 32 instances were transformed.
   IBUFG => IBUF: 1 instances
+  LDC => LDCE: 30 instances
   PLL_BASE => MMCME2_ADV: 1 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-53 Infos, 24 Warnings, 0 Critical Warnings and 0 Errors encountered.
+70 Infos, 35 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 626.883 ; gain = 420.332
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 626.883 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Thu May 24 10:20:27 2018...
+synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:37 . Memory (MB): peak = 627.043 ; gain = 420.063
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 627.043 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed May 30 11:40:53 2018...

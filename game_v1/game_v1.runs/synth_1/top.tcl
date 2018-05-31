@@ -17,13 +17,15 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
 read_vhdl -library xil_defaultlib {
+  D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/score.vhd
   D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/collision.vhd
   D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/prbs.vhd
   D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/player_vector.vhd
   D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/board_matrix.vhd
+  D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/player_tick_gen.vhd
+  D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/tick_generator.vhd
   D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/vga_controller.vhd
   D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd
-  D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/tick_generator.vhd
   D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/clk_wiz_v3_6.vhd
   D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/top.vhd
 }

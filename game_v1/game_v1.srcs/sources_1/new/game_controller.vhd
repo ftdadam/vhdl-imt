@@ -5,14 +5,17 @@ use IEEE.NUMERIC_STD.ALL;
 entity game_controller is
 port ( 
         clk : in STD_LOGIC;
+        player_clk : in STD_LOGIC;
         rst : in STD_LOGIC;
         enb : in STD_LOGIC;
         i_button_up : in STD_LOGIC;
         i_button_down : in STD_LOGIC;
         i_h_count : in STD_LOGIC_VECTOR (11-1 downto 0);
         i_v_count : in STD_LOGIC_VECTOR (11-1 downto 0);
+        i_sw_seed : in STD_LOGIC_VECTOR (13 downto 0);
         o_lives : out STD_LOGIC_VECTOR (2 downto 0);
         o_game_over : out STD_LOGIC;
+        o_tick_gen_max : out STD_LOGIC_VECTOR (25 downto 0);
         o_rgb : out STD_LOGIC_VECTOR (12-1 downto 0)
 );
 end game_controller;
@@ -42,17 +45,17 @@ generic (
     NB_LINE_SELECTION : integer
 );
 port (
-        clk : in STD_LOGIC;
-        rst : in STD_LOGIC;
-        enb : in STD_LOGIC;
-        i_h_count : in STD_LOGIC_VECTOR (11 - 1 downto 0);  --CAMBIAR LONG
-        i_v_count : in STD_LOGIC_VECTOR (11 - 1 downto 0);  --CAMBIAR LONG
-        i_player_vector : in STD_LOGIC_VECTOR (N_H_LANES - 1 downto 0);
-        i_game_over : in STD_LOGIC;
-        i_obstacle_bit : in STD_LOGIC_VECTOR (0 downto 0);
-        i_obstacle_line : in STD_LOGIC_VECTOR (NB_LINE_SELECTION-1 downto 0);
-        o_rgb_data : out STD_LOGIC_VECTOR (12-1 downto 0);
-        o_board_end_vector : out STD_LOGIC_VECTOR (N_H_LANES-1 downto 0)
+    clk : in STD_LOGIC;
+    rst : in STD_LOGIC;
+    enb : in STD_LOGIC;
+    i_h_count : in STD_LOGIC_VECTOR (11 - 1 downto 0);  --CAMBIAR LONG
+    i_v_count : in STD_LOGIC_VECTOR (11 - 1 downto 0);  --CAMBIAR LONG
+    i_player_vector : in STD_LOGIC_VECTOR (N_H_LANES - 1 downto 0);
+    i_game_over : in STD_LOGIC;
+    i_obstacle_bit : in STD_LOGIC_VECTOR (0 downto 0);
+    i_obstacle_line : in STD_LOGIC_VECTOR (NB_LINE_SELECTION-1 downto 0);
+    o_rgb_data : out STD_LOGIC_VECTOR (12-1 downto 0);
+    o_board_end_vector : out STD_LOGIC_VECTOR (N_H_LANES-1 downto 0)
 );
 end component;
 
@@ -85,6 +88,25 @@ port (
 );
 end component;
 
+component score is
+port (  enb : in STD_LOGIC;
+        rst : in STD_LOGIC;
+        clk : in STD_LOGIC;
+        o_tick_gen_max : out STD_LOGIC_VECTOR (25 downto 0);
+        o_score : out STD_LOGIC_VECTOR (12 - 1 downto 0)
+);
+end component;
+
+component bin2bcd is
+port (
+    i_binary : in STD_LOGIC_VECTOR (12-1 downto 0);
+    o_digit_0 : out STD_LOGIC_VECTOR (3 downto 0);
+    o_digit_1 : out STD_LOGIC_VECTOR (3 downto 0);
+    o_digit_2 : out STD_LOGIC_VECTOR (3 downto 0);
+    o_digit_3 : out STD_LOGIC_VECTOR (3 downto 0)
+);
+end component;
+
 CONSTANT TAP_0 : integer := 15;
 CONSTANT TAP_1 : integer := 14;
 CONSTANT NB_OUT_LANE_GEN : integer := 3; 
@@ -98,16 +120,17 @@ signal seed_lane_gen : STD_LOGIC_VECTOR (NB_PRBS_LANE_GEN-1 downto 0);
 signal seed_obj_gen : STD_LOGIC_VECTOR (NB_PRBS_OBJ_GEN-1 downto 0);
 signal connect_lane_gen_to_board : STD_LOGIC_VECTOR (NB_OUT_LANE_GEN-1 downto 0);
 signal connect_obj_gen_to_board : STD_LOGIC_VECTOR (NB_OUT_OBJ_GEN-1 downto 0);
-signal connect_board_to_collition : STD_LOGIC_VECTOR (N_H_LANES-1 downto 0);
-signal connect_player_to_collition : STD_LOGIC_VECTOR (N_H_LANES-1 downto 0);
+signal connect_board_to_collision : STD_LOGIC_VECTOR (N_H_LANES-1 downto 0);
+signal connect_player_to_collision : STD_LOGIC_VECTOR (N_H_LANES-1 downto 0);
 signal connect_game_over : STD_LOGIC;
 signal connect_rgb_data : STD_LOGIC_VECTOR (12-1 downto 0);
 signal connect_o_lives : STD_LOGIC_VECTOR (2 downto 0);
+signal connect_score : STD_LOGIC_VECTOR (12 - 1 downto 0);
 
 begin
 
-seed_lane_gen <= std_logic_vector(to_unsigned(12182,seed_lane_gen'length));
-seed_obj_gen <= std_logic_vector(to_unsigned(34232,seed_lane_gen'length));
+seed_lane_gen <= std_logic_vector(to_unsigned(12182,seed_lane_gen'length) + unsigned(i_sw_seed) );
+seed_obj_gen <= std_logic_vector(to_unsigned(34232,seed_obj_gen'length) + unsigned(i_sw_seed) );
 
 lane_generator : prbs
 generic map(
@@ -151,11 +174,11 @@ port map(
     enb => enb,
     i_h_count => i_h_count,
     i_v_count => i_v_count,
-    i_player_vector => connect_player_to_collition,
+    i_player_vector => connect_player_to_collision,
     i_game_over => connect_game_over,
     i_obstacle_bit => connect_obj_gen_to_board,
     i_obstacle_line => connect_lane_gen_to_board,
-    o_board_end_vector => connect_board_to_collition,
+    o_board_end_vector => connect_board_to_collision,
     o_rgb_data => connect_rgb_data
 );
 
@@ -164,12 +187,12 @@ generic map(
     N_H_LANES => N_H_LANES
 )
 port map(
-    clk => clk,
+    clk => player_clk,
     rst => rst,
     enb => enb,
     i_button_down => i_button_down,
     i_button_up => i_button_up,
-    o_player_vect => connect_player_to_collition
+    o_player_vect => connect_player_to_collision
 );
 
 collision_control : collision
@@ -180,10 +203,28 @@ port map(
     clk => clk,
     rst => rst,
     enb => enb,
-    i_player_vect => connect_player_to_collition,
-    i_board_vect => connect_board_to_collition,
+    i_player_vect => connect_player_to_collision,
+    i_board_vect => connect_board_to_collision,
     o_lives => connect_o_lives,
     o_game_over => connect_game_over
+);
+
+score_counter : score
+port map(
+    enb => enb,
+    rst => rst,
+    clk => clk,
+    o_score => connect_score,
+    o_tick_gen_max => o_tick_gen_max
+);
+
+u_bin2bcd : bin2bcd
+port map(
+    i_binary => connect_score,
+    o_digit_0 => open,
+    o_digit_1 => open,
+    o_digit_2 => open,
+    o_digit_3 => open
 );
 
 o_rgb <= connect_rgb_data;
