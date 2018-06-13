@@ -1,0 +1,153 @@
+Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
+| Date         : Wed Jun 06 10:58:32 2018
+| Host         : DESKTOP-8T38IV2 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
+| Design       : top
+| Device       : xc7a100t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |   100 |
+| Unused register locations in slices containing registers |   665 |
++----------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               2 |            2 |
+| No           | No                    | Yes                    |              97 |           45 |
+| No           | Yes                   | No                     |              41 |           34 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             240 |           80 |
+| Yes          | Yes                   | No                     |              11 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------------------------------------+-----------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+
+|                            Clock Signal                            |                    Enable Signal                    |                          Set/Reset Signal                         | Slice Load Count | Bel Load Count |
++--------------------------------------------------------------------+-----------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+
+|  u_game_controller/lane_generator/shift_reg_reg[2]_LDC_i_1__0_n_0  |                                                     | u_game_controller/lane_generator/shift_reg_reg[2]_LDC_i_2__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/object_generator/shift_reg_reg[5]_LDC_i_1_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/object_generator/shift_reg_reg[6]_LDC_i_1_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/object_generator/shift_reg_reg[7]_LDC_i_1_n_0   |                1 |              1 |
+|  u_game_controller/object_generator/shift_reg_reg[9]_LDC_i_1_n_0   |                                                     | u_game_controller/object_generator/shift_reg_reg[9]_LDC_i_2_n_0   |                1 |              1 |
+|  u_game_controller/lane_generator/shift_reg_reg[0]_LDC_i_1__0_n_0  |                                                     | u_game_controller/lane_generator/shift_reg_reg[0]_LDC_i_2__0_n_0  |                1 |              1 |
+|  u_game_controller/lane_generator/shift_reg_reg[10]_LDC_i_1__0_n_0 |                                                     | u_game_controller/lane_generator/shift_reg_reg[10]_LDC_i_2__0_n_0 |                1 |              1 |
+|  u_game_controller/lane_generator/shift_reg_reg[11]_LDC_i_1__0_n_0 |                                                     | u_game_controller/lane_generator/shift_reg_reg[11]_LDC_i_2__0_n_0 |                1 |              1 |
+|  u_game_controller/lane_generator/shift_reg_reg[12]_LDC_i_1__0_n_0 |                                                     | u_game_controller/lane_generator/shift_reg_reg[12]_LDC_i_2__0_n_0 |                1 |              1 |
+|  u_game_controller/lane_generator/shift_reg_reg[13]_LDC_i_1__0_n_0 |                                                     | u_game_controller/lane_generator/shift_reg_reg[13]_LDC_i_2__0_n_0 |                1 |              1 |
+|  u_game_controller/lane_generator/shift_reg_reg[14]_LDC_i_1__0_n_0 |                                                     | u_game_controller/lane_generator/shift_reg_reg[14]_LDC_i_2__0_n_0 |                1 |              1 |
+|  u_game_controller/lane_generator/shift_reg_reg[1]_LDC_i_1__0_n_0  |                                                     | u_game_controller/lane_generator/shift_reg_reg[1]_LDC_i_2__0_n_0  |                1 |              1 |
+|  u_game_controller/object_generator/shift_reg_reg[13]_LDC_i_1_n_0  |                                                     | u_game_controller/object_generator/shift_reg_reg[13]_LDC_i_2_n_0  |                1 |              1 |
+|  u_game_controller/lane_generator/shift_reg_reg[3]_LDC_i_1__0_n_0  |                                                     | u_game_controller/lane_generator/shift_reg_reg[3]_LDC_i_2__0_n_0  |                1 |              1 |
+|  u_game_controller/lane_generator/shift_reg_reg[4]_LDC_i_1__0_n_0  |                                                     | u_game_controller/lane_generator/shift_reg_reg[4]_LDC_i_2__0_n_0  |                1 |              1 |
+|  u_game_controller/lane_generator/shift_reg_reg[5]_LDC_i_1__0_n_0  |                                                     | u_game_controller/lane_generator/shift_reg_reg[5]_LDC_i_2__0_n_0  |                1 |              1 |
+|  u_game_controller/lane_generator/shift_reg_reg[6]_LDC_i_1__0_n_0  |                                                     | u_game_controller/lane_generator/shift_reg_reg[6]_LDC_i_2__0_n_0  |                1 |              1 |
+|  u_game_controller/lane_generator/shift_reg_reg[7]_LDC_i_1__0_n_0  |                                                     | u_game_controller/lane_generator/shift_reg_reg[7]_LDC_i_2__0_n_0  |                1 |              1 |
+|  u_game_controller/lane_generator/shift_reg_reg[8]_LDC_i_1__0_n_0  |                                                     | u_game_controller/lane_generator/shift_reg_reg[8]_LDC_i_2__0_n_0  |                1 |              1 |
+|  u_game_controller/lane_generator/shift_reg_reg[9]_LDC_i_1__0_n_0  |                                                     | u_game_controller/lane_generator/shift_reg_reg[9]_LDC_i_2__0_n_0  |                1 |              1 |
+|  u_game_controller/object_generator/shift_reg_reg[0]_LDC_i_1_n_0   |                                                     | u_game_controller/object_generator/shift_reg_reg[0]_LDC_i_2_n_0   |                1 |              1 |
+|  u_game_controller/object_generator/shift_reg_reg[10]_LDC_i_1_n_0  |                                                     | u_game_controller/object_generator/shift_reg_reg[10]_LDC_i_2_n_0  |                1 |              1 |
+|  u_game_controller/object_generator/shift_reg_reg[11]_LDC_i_1_n_0  |                                                     | u_game_controller/object_generator/shift_reg_reg[11]_LDC_i_2_n_0  |                1 |              1 |
+|  u_game_controller/object_generator/shift_reg_reg[12]_LDC_i_1_n_0  |                                                     | u_game_controller/object_generator/shift_reg_reg[12]_LDC_i_2_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/object_generator/shift_reg_reg[8]_LDC_i_1_n_0   |                1 |              1 |
+|  u_game_controller/object_generator/shift_reg_reg[14]_LDC_i_1_n_0  |                                                     | u_game_controller/object_generator/shift_reg_reg[14]_LDC_i_2_n_0  |                1 |              1 |
+|  u_game_controller/object_generator/shift_reg_reg[1]_LDC_i_1_n_0   |                                                     | u_game_controller/object_generator/shift_reg_reg[1]_LDC_i_2_n_0   |                1 |              1 |
+|  u_game_controller/object_generator/shift_reg_reg[2]_LDC_i_1_n_0   |                                                     | u_game_controller/object_generator/shift_reg_reg[2]_LDC_i_2_n_0   |                1 |              1 |
+|  u_game_controller/object_generator/shift_reg_reg[3]_LDC_i_1_n_0   |                                                     | u_game_controller/object_generator/shift_reg_reg[3]_LDC_i_2_n_0   |                1 |              1 |
+|  u_game_controller/object_generator/shift_reg_reg[4]_LDC_i_1_n_0   |                                                     | u_game_controller/object_generator/shift_reg_reg[4]_LDC_i_2_n_0   |                1 |              1 |
+|  u_game_controller/object_generator/shift_reg_reg[5]_LDC_i_1_n_0   |                                                     | u_game_controller/object_generator/shift_reg_reg[5]_LDC_i_2_n_0   |                1 |              1 |
+|  u_game_controller/object_generator/shift_reg_reg[6]_LDC_i_1_n_0   |                                                     | u_game_controller/object_generator/shift_reg_reg[6]_LDC_i_2_n_0   |                1 |              1 |
+|  u_game_controller/object_generator/shift_reg_reg[7]_LDC_i_1_n_0   |                                                     | u_game_controller/object_generator/shift_reg_reg[7]_LDC_i_2_n_0   |                1 |              1 |
+|  u_game_controller/object_generator/shift_reg_reg[8]_LDC_i_1_n_0   |                                                     | u_game_controller/object_generator/shift_reg_reg[8]_LDC_i_2_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/lane_generator/shift_reg_reg[0]_LDC_i_2__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/lane_generator/shift_reg_reg[10]_LDC_i_2__0_n_0 |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/lane_generator/shift_reg_reg[11]_LDC_i_2__0_n_0 |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/lane_generator/shift_reg_reg[12]_LDC_i_2__0_n_0 |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/lane_generator/shift_reg_reg[13]_LDC_i_2__0_n_0 |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/lane_generator/shift_reg_reg[14]_LDC_i_2__0_n_0 |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/lane_generator/shift_reg_reg[1]_LDC_i_2__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/lane_generator/shift_reg_reg[2]_LDC_i_2__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/lane_generator/shift_reg_reg[3]_LDC_i_2__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/lane_generator/shift_reg_reg[4]_LDC_i_2__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/lane_generator/shift_reg_reg[5]_LDC_i_2__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/lane_generator/shift_reg_reg[6]_LDC_i_2__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/lane_generator/shift_reg_reg[7]_LDC_i_2__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/lane_generator/shift_reg_reg[8]_LDC_i_2__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/lane_generator/shift_reg_reg[9]_LDC_i_2__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/object_generator/shift_reg_reg[0]_LDC_i_2_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/object_generator/shift_reg_reg[10]_LDC_i_2_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/object_generator/shift_reg_reg[11]_LDC_i_2_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/object_generator/shift_reg_reg[12]_LDC_i_2_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/object_generator/shift_reg_reg[13]_LDC_i_2_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/object_generator/shift_reg_reg[14]_LDC_i_2_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/object_generator/shift_reg_reg[1]_LDC_i_2_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/object_generator/shift_reg_reg[2]_LDC_i_2_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/object_generator/shift_reg_reg[3]_LDC_i_2_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/object_generator/shift_reg_reg[4]_LDC_i_2_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/object_generator/shift_reg_reg[5]_LDC_i_2_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/object_generator/shift_reg_reg[6]_LDC_i_2_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/object_generator/shift_reg_reg[7]_LDC_i_2_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/object_generator/shift_reg_reg[8]_LDC_i_2_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     |                                                     | u_game_controller/object_generator/shift_reg_reg[9]_LDC_i_2_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/object_generator/shift_reg_reg[9]_LDC_i_1_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/lane_generator/shift_reg_reg[0]_LDC_i_1__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/lane_generator/shift_reg_reg[10]_LDC_i_1__0_n_0 |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/lane_generator/shift_reg_reg[11]_LDC_i_1__0_n_0 |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/lane_generator/shift_reg_reg[12]_LDC_i_1__0_n_0 |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/lane_generator/shift_reg_reg[13]_LDC_i_1__0_n_0 |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/lane_generator/shift_reg_reg[14]_LDC_i_1__0_n_0 |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/lane_generator/shift_reg_reg[1]_LDC_i_1__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/lane_generator/shift_reg_reg[2]_LDC_i_1__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/lane_generator/shift_reg_reg[3]_LDC_i_1__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/lane_generator/shift_reg_reg[4]_LDC_i_1__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/lane_generator/shift_reg_reg[5]_LDC_i_1__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/lane_generator/shift_reg_reg[6]_LDC_i_1__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/lane_generator/shift_reg_reg[7]_LDC_i_1__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/lane_generator/shift_reg_reg[8]_LDC_i_1__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/lane_generator/shift_reg_reg[9]_LDC_i_1__0_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/object_generator/shift_reg_reg[0]_LDC_i_1_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/object_generator/shift_reg_reg[10]_LDC_i_1_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/object_generator/shift_reg_reg[11]_LDC_i_1_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/object_generator/shift_reg_reg[12]_LDC_i_1_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/object_generator/shift_reg_reg[13]_LDC_i_1_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/object_generator/shift_reg_reg[14]_LDC_i_1_n_0  |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/object_generator/shift_reg_reg[1]_LDC_i_1_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/object_generator/shift_reg_reg[2]_LDC_i_1_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/object_generator/shift_reg_reg[3]_LDC_i_1_n_0   |                1 |              1 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | u_game_controller/object_generator/shift_reg_reg[4]_LDC_i_1_n_0   |                1 |              1 |
+|  pixel_clock/CLK_OUT1                                              |                                                     |                                                                   |                2 |              2 |
+|  u_tick_gen_displays/CLK                                           |                                                     | LED_OBUF[0]                                                       |                1 |              3 |
+|  u_player_tick_gen/CLK                                             | u_game_controller/player/player_vect                | BTNC_IBUF                                                         |                2 |              8 |
+|  pixel_clock/CLK_OUT1                                              |                                                     | u_vga_contoller/hcounter[10]_i_1_n_0                              |                4 |             11 |
+|  pixel_clock/CLK_OUT1                                              | u_vga_contoller/eqOp                                | u_vga_contoller/vcounter[10]_i_1_n_0                              |                6 |             11 |
+|  game_clk_BUFG                                                     | u_game_controller/score_counter/high_score0         | BTNC_IBUF                                                         |                4 |             12 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/tick_gen_max    | BTNC_IBUF                                                         |                8 |             27 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/lives           | BTNC_IBUF                                                         |                8 |             32 |
+|  pixel_clock/CLK_OUT1                                              |                                                     | LED_OBUF[0]                                                       |               14 |             64 |
+|  game_clk_BUFG                                                     | u_game_controller/collision_control/game_over_reg_0 | BTNC_IBUF                                                         |               28 |            131 |
++--------------------------------------------------------------------+-----------------------------------------------------+-------------------------------------------------------------------+------------------+----------------+
+
+

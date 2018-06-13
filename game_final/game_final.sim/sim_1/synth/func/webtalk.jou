@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.1 (64-bit)
+# SW Build 1538259 on Fri Apr  8 15:45:27 MDT 2016
+# IP Build 1537824 on Fri Apr  8 04:28:57 MDT 2016
+# Start of session at: Wed Jun 06 10:18:27 2018
+# Process ID: 10988
+# Current directory: D:/imt/vhdl-imt/game_final/game_final.sim/sim_1/synth/func
+# Command line: wbtcv.exe -mode batch -source D:/imt/vhdl-imt/game_final/game_final.sim/sim_1/synth/func/xsim.dir/tb_top_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: D:/imt/vhdl-imt/game_final/game_final.sim/sim_1/synth/func/webtalk.log
+# Journal file: D:/imt/vhdl-imt/game_final/game_final.sim/sim_1/synth/func\webtalk.jou
+#-----------------------------------------------------------
+source D:/imt/vhdl-imt/game_final/game_final.sim/sim_1/synth/func/xsim.dir/tb_top_func_synth/webtalk/xsim_webtalk.tcl -notrace

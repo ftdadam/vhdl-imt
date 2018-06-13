@@ -3,6 +3,7 @@
 # 
 
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
 set_msg_config -id {HDL 9-1061} -limit 100000
 set_msg_config -id {HDL 9-1654} -limit 100000
 set_msg_config  -ruleid {1}  -id {Board 49-26}  -suppress 
@@ -17,16 +18,18 @@ set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part digilentinc.com:nexys4_ddr:part0:1.1 [current_project]
 read_vhdl -library xil_defaultlib {
+  D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/bin2bcd.vhd
   D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/score.vhd
   D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/collision.vhd
   D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/prbs.vhd
   D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/player_vector.vhd
   D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/board_matrix.vhd
-  D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/player_tick_gen.vhd
-  D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/tick_generator.vhd
   D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/vga_controller.vhd
-  D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd
+  D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/tick_generator.vhd
+  D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/tdm_displays.vhd
+  D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/player_tick_gen.vhd
   D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/clk_wiz_v3_6.vhd
+  D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd
   D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/top.vhd
 }
 foreach dcp [get_files -quiet -all *.dcp] {

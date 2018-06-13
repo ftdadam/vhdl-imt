@@ -10,11 +10,11 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="48317319862fs"></ZoomStartTime>
-      <ZoomEndTime time="50867512691fs"></ZoomEndTime>
-      <Cursor1Time time="48742352000fs"></Cursor1Time>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="3480000001fs"></ZoomEndTime>
+      <Cursor1Time time="1000000000fs"></Cursor1Time>
    </zoom_setting>
-   <WVObjectSize size="17" />
+   <WVObjectSize size="20" />
    <wvobject fp_name="/tb_top/CLK100MHZ" type="logic">
       <obj_property name="ElementShortName">CLK100MHZ</obj_property>
       <obj_property name="ObjectShortName">CLK100MHZ</obj_property>
@@ -64,10 +64,9 @@
       <obj_property name="ElementShortName">collision</obj_property>
       <obj_property name="ObjectShortName">collision</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top/u_top/u_game_controller/u_bin2bcd/i_binary" type="array">
-      <obj_property name="ElementShortName">i_binary[11:0]</obj_property>
-      <obj_property name="ObjectShortName">i_binary[11:0]</obj_property>
-      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   <wvobject fp_name="/tb_top/u_top/u_game_controller/score_counter/score" type="array">
+      <obj_property name="ElementShortName">score[11:0]</obj_property>
+      <obj_property name="ObjectShortName">score[11:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/tb_top/u_top/u_game_controller/u_bin2bcd/o_digit_0" type="array">
       <obj_property name="ElementShortName">o_digit_0[3:0]</obj_property>
@@ -77,12 +76,26 @@
       <obj_property name="ElementShortName">o_digit_1[3:0]</obj_property>
       <obj_property name="ObjectShortName">o_digit_1[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top/u_top/u_game_controller/u_bin2bcd/o_digit_2" type="array">
-      <obj_property name="ElementShortName">o_digit_2[3:0]</obj_property>
-      <obj_property name="ObjectShortName">o_digit_2[3:0]</obj_property>
+   <wvobject fp_name="/tb_top/u_top/u_tdm_displays/o_segments" type="array">
+      <obj_property name="ElementShortName">o_segments[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_segments[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/tb_top/u_top/u_game_controller/u_bin2bcd/o_digit_3" type="array">
-      <obj_property name="ElementShortName">o_digit_3[3:0]</obj_property>
-      <obj_property name="ObjectShortName">o_digit_3[3:0]</obj_property>
+   <wvobject fp_name="/tb_top/u_top/u_tdm_displays/o_enb_display" type="array">
+      <obj_property name="ElementShortName">o_enb_display[3:0]</obj_property>
+      <obj_property name="ObjectShortName">o_enb_display[3:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/u_top/u_tdm_displays/o_segments" type="array">
+      <obj_property name="ElementShortName">o_segments[7:0]</obj_property>
+      <obj_property name="ObjectShortName">o_segments[7:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/u_top/u_tdm_displays/digit" type="array">
+      <obj_property name="ElementShortName">digit[3:0]</obj_property>
+      <obj_property name="ObjectShortName">digit[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/u_top/u_tdm_displays/sel_display" type="array">
+      <obj_property name="ElementShortName">sel_display[1:0]</obj_property>
+      <obj_property name="ObjectShortName">sel_display[1:0]</obj_property>
    </wvobject>
 </wave_config>

@@ -1,0 +1,18 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/imt/vhdl-imt/game_final/game_final.sim/sim_1/synth/func/tb_top_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module board_matrix
+INFO: [VRFC 10-311] analyzing module clk_wiz_v3_6
+INFO: [VRFC 10-311] analyzing module collision
+INFO: [VRFC 10-311] analyzing module game_controller
+INFO: [VRFC 10-311] analyzing module player_tick_gen
+INFO: [VRFC 10-311] analyzing module player_vector
+INFO: [VRFC 10-311] analyzing module prbs
+INFO: [VRFC 10-311] analyzing module prbs__parameterized1
+INFO: [VRFC 10-311] analyzing module score
+INFO: [VRFC 10-311] analyzing module tdm_displays
+INFO: [VRFC 10-311] analyzing module tick_gen
+INFO: [VRFC 10-311] analyzing module tick_gen_0
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-311] analyzing module vga_controller_640_60
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/game_final/game_final.srcs/sim_1/imports/new/tb_top.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tb_top

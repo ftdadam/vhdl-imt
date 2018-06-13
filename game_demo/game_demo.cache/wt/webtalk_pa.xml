@@ -3,7 +3,7 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Wed May 30 11:54:39 2018">
+<application name="pa" timeStamp="Thu May 31 11:04:32 2018">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="93f879e90c74479bbaac451565426c3b" type="ProjectID"/>
 <property name="ProjectIteration" value="1" type="ProjectIteration"/>
@@ -24,53 +24,60 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="OpenRecentTarget" value="1" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
-<property name="CANCEL, Cancel" value="1" type="GuiResourceData"/>
-<property name="PAResourceCommand.PACommandNames_OPEN_TARGET_WIZARD, Open New Target..." value="1" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, top_level - Behavioral (top_level.vhd" value="2" type="GuiResourceData"/>
-<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Program and Debug, Hardware Manager, Open Target], 27, false" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Synthesis, [Synth 8-3332] Sequential element (u_game_controller/score_counter/tick_gen_max_reg[25]" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Vivado Commands, refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]. ], 1" value="1" type="GuiResourceData"/>
-<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Vivado Commands, refresh_hw_device [lindex [get_hw_devices] 0]. ], 2" value="1" type="GuiResourceData"/>
-<property name="PAResourceOtoP.ProgramDebugTab_PROGRAM_DEVICE, Program device" value="2" type="GuiResourceData"/>
-<property name="PAResourceOtoP.ProgramFpgaDialog_PROGRAM, Program" value="1" type="GuiResourceData"/>
-<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="1" type="GuiResourceData"/>
-<property name="RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, (String" value="1" type="GuiResourceData"/>
-<property name="RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, mmsd_v, true" value="1" type="GuiResourceData"/>
-<property name="RDIResource.HCodeEditor_SEARCH_TEXT_COMBO_BOX, score, true" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 104, 265" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 104, 298" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 104, 298, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 119, 175" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 130, 130" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 130, 130, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 131, 183" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 131, 183, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 152, 297" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 152, 297, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 154, 239" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 154, 239, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 155, 231" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 155, 231, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 161, 296, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 162, 296" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 194, 190" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 207, 302" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 208, 296" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 208, 296, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 226, 337" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 226, 337, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 309, 388" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 309, 388, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 345, 116" value="1" type="GuiResourceData"/>
-<property name="sseg_dec.vhd, 345, 116, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="top_level.vhd, 211, 285" value="1" type="GuiResourceData"/>
-<property name="top_level.vhd, 211, 285, false, false, false, false, true" value="1" type="GuiResourceData"/>
-<property name="top_level.vhd, 300, 232" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, top_level - Behavioral (top_level.vhd" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_RECENT_PROJECTS, D:/imt/vhdl-imt/game_demo/game_demo.xpr, 0" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 0, 129" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 100, 163" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 100, 163, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 101, 261" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 102, 197" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 102, 197, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 111, 334" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 112, 335" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 112, 335, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 118, 278" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 123, 182" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 123, 182, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 128, 236" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 128, 415" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 130, 327" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 146, 403" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 158, 375" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 166, 248" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 167, 197" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 167, 197, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 167, 65" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 168, 333" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 169, 333" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 169, 333, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 175, 92" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 175, 92, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 18, 194" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 183, 219" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 214, 342" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 229, 399" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 236, 293" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 236, 293, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 237, 280" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 237, 280, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 254, 201, false, false, true, false, false" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 266, 381, false, false, true, false, false" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 28, 114" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 305, 129" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 305, 129, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 31, 117" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 393, 318" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 44, 181" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 44, 181, false, false, false, false, true" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 486, 374" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 523, 396" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 70, 155" value="1" type="GuiResourceData"/>
+<property name="sseg_dec.vhd, 95, 254" value="2" type="GuiResourceData"/>
 </item>
 <item name="Other">
-<property name="GuiMode" value="456" type="GuiMode"/>
+<property name="GuiMode" value="458" type="GuiMode"/>
 <property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="422" type="TclMode"/>
+<property name="TclMode" value="423" type="TclMode"/>
 </item>
 </section>
 </application>

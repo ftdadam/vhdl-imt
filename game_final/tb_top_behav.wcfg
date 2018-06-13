@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_top_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="tb_top" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="55101470000fs"></ZoomStartTime>
+      <ZoomEndTime time="62211470001fs"></ZoomEndTime>
+      <Cursor1Time time="56286470000fs"></Cursor1Time>
+   </zoom_setting>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/tb_top/CLK100MHZ" type="logic">
+      <obj_property name="ElementShortName">CLK100MHZ</obj_property>
+      <obj_property name="ObjectShortName">CLK100MHZ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/SW" type="array">
+      <obj_property name="ElementShortName">SW[15:0]</obj_property>
+      <obj_property name="ObjectShortName">SW[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/BTNC" type="logic">
+      <obj_property name="ElementShortName">BTNC</obj_property>
+      <obj_property name="ObjectShortName">BTNC</obj_property>
+   </wvobject>
+   <wvobject fp_name="group88" type="group">
+      <obj_property name="label">score</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/score_counter/enb" type="logic">
+         <obj_property name="ElementShortName">enb</obj_property>
+         <obj_property name="ObjectShortName">enb</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/score_counter/rst" type="logic">
+         <obj_property name="ElementShortName">rst</obj_property>
+         <obj_property name="ObjectShortName">rst</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/score_counter/rst_game" type="logic">
+         <obj_property name="ElementShortName">rst_game</obj_property>
+         <obj_property name="ObjectShortName">rst_game</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/score_counter/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/score_counter/o_tick_gen_max" type="array">
+         <obj_property name="ElementShortName">o_tick_gen_max[25:0]</obj_property>
+         <obj_property name="ObjectShortName">o_tick_gen_max[25:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/score_counter/o_score" type="array">
+         <obj_property name="ElementShortName">o_score[11:0]</obj_property>
+         <obj_property name="ObjectShortName">o_score[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/score_counter/o_h_score" type="array">
+         <obj_property name="ElementShortName">o_h_score[11:0]</obj_property>
+         <obj_property name="ObjectShortName">o_h_score[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/score_counter/score" type="array">
+         <obj_property name="ElementShortName">score[11:0]</obj_property>
+         <obj_property name="ObjectShortName">score[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/score_counter/high_score" type="array">
+         <obj_property name="ElementShortName">high_score[11:0]</obj_property>
+         <obj_property name="ObjectShortName">high_score[11:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/score_counter/tick_gen_max" type="other">
+         <obj_property name="ElementShortName">tick_gen_max</obj_property>
+         <obj_property name="ObjectShortName">tick_gen_max</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_top/u_top/u_game_controller/board/i_player_vector" type="array">
+      <obj_property name="ElementShortName">i_player_vector[7:0]</obj_property>
+      <obj_property name="ObjectShortName">i_player_vector[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/u_top/u_game_controller/board/i_game_over" type="logic">
+      <obj_property name="ElementShortName">i_game_over</obj_property>
+      <obj_property name="ObjectShortName">i_game_over</obj_property>
+   </wvobject>
+   <wvobject fp_name="/tb_top/u_top/u_game_controller/board/board" type="array">
+      <obj_property name="ElementShortName">board[7:0][15:0]</obj_property>
+      <obj_property name="ObjectShortName">board[7:0][15:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/board/board[7]" type="array">
+         <obj_property name="ElementShortName">[7][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[7][15:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/board/board[6]" type="array">
+         <obj_property name="ElementShortName">[6][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[6][15:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/board/board[5]" type="array">
+         <obj_property name="ElementShortName">[5][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[5][15:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/board/board[4]" type="array">
+         <obj_property name="ElementShortName">[4][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[4][15:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/board/board[3]" type="array">
+         <obj_property name="ElementShortName">[3][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[3][15:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/board/board[2]" type="array">
+         <obj_property name="ElementShortName">[2][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[2][15:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/board/board[1]" type="array">
+         <obj_property name="ElementShortName">[1][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[1][15:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/tb_top/u_top/u_game_controller/board/board[0]" type="array">
+         <obj_property name="ElementShortName">[0][15:0]</obj_property>
+         <obj_property name="ObjectShortName">[0][15:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/tb_top/u_top/u_game_controller/collision_control/o_lives" type="array">
+      <obj_property name="ElementShortName">o_lives[2:0]</obj_property>
+      <obj_property name="ObjectShortName">o_lives[2:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

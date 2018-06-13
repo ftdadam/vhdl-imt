@@ -38,6 +38,7 @@ Compiling architecture xilinx of entity xil_defaultlib.clk_wiz_v3_6 [clk_wiz_v3_
 Compiling architecture behavioral of entity xil_defaultlib.tick_gen [tick_gen_default]
 Compiling architecture behavioral of entity xil_defaultlib.player_tick_gen [player_tick_gen_default]
 Compiling architecture behavioral of entity xil_defaultlib.vga_controller_640_60 [vga_controller_640_60_default]
+Compiling architecture behavioral of entity xil_defaultlib.tdm_displays [tdm_displays_default]
 Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
 Compiling architecture behavioral of entity xil_defaultlib.tb_top
 Built simulation snapshot tb_top_behav

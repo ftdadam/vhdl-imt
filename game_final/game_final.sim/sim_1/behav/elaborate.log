@@ -1,0 +1,44 @@
+Vivado Simulator 2016.1
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.1/bin/unwrapped/win64.o/xelab.exe -wto 113b1efd00b849a7831faebaed347f4d --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot tb_top_behav xil_defaultlib.tb_top -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_signed
+Compiling package std.textio
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling architecture behavioral of entity xil_defaultlib.prbs [prbs_default]
+Compiling architecture behavioral of entity xil_defaultlib.prbs [\prbs(nb_out=1)\]
+Compiling architecture behavioral of entity xil_defaultlib.board_matrix [board_matrix_default]
+Compiling architecture behavioral of entity xil_defaultlib.player_vector [player_vector_default]
+Compiling architecture behavioral of entity xil_defaultlib.collision [collision_default]
+Compiling architecture behavioral of entity xil_defaultlib.score [score_default]
+Compiling architecture behavioral of entity xil_defaultlib.bin2bcd [bin2bcd_default]
+Compiling architecture behavioral of entity xil_defaultlib.game_controller [game_controller_default]
+Compiling architecture ibuf_v of entity unisim.IBUF [\IBUF(1,9,1,1,1,4,1,7)\]
+Compiling architecture ibufg_v of entity unisim.IBUFG [\IBUFG(1,9,1,1,1,7)\]
+Compiling architecture mmcme2_adv_v of entity unisim.MMCME2_ADV [\MMCME2_ADV(clkfbout_mult_f=34.0...]
+Compiling architecture mmcme2_base_v of entity unisim.MMCME2_BASE [\MMCME2_BASE(clkfbout_mult_f=34....]
+Compiling architecture pll_base_v of entity unisim.PLL_BASE [\PLL_BASE(clkfbout_mult=34,clkin...]
+Compiling architecture bufg_v of entity unisim.BUFG [bufg_default]
+Compiling architecture xilinx of entity xil_defaultlib.clk_wiz_v3_6 [clk_wiz_v3_6_default]
+Compiling architecture behavioral of entity xil_defaultlib.tick_gen [tick_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.player_tick_gen [player_tick_gen_default]
+Compiling architecture behavioral of entity xil_defaultlib.vga_controller_640_60 [vga_controller_640_60_default]
+Compiling architecture behavioral of entity xil_defaultlib.tdm_displays [tdm_displays_default]
+Compiling architecture behavioral of entity xil_defaultlib.top [top_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_top
+Built simulation snapshot tb_top_behav

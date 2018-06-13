@@ -10,16 +10,18 @@ INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/game_v1/game_v1.srcs/so
 INFO: [VRFC 10-307] analyzing entity player_vector
 INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/board_matrix.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity board_matrix
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/player_tick_gen.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity player_tick_gen
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/tick_generator.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity tick_gen
 INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/vga_controller.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity vga_controller_640_60
-INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd" into library xil_defaultlib
-INFO: [VRFC 10-307] analyzing entity game_controller
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/tick_generator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tick_gen
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/tdm_displays.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity tdm_displays
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/player_tick_gen.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity player_tick_gen
 INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/clk_wiz_v3_6.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity clk_wiz_v3_6
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/game_controller.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity game_controller
 INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/game_v1/game_v1.srcs/sources_1/new/top.vhd" into library xil_defaultlib
 INFO: [VRFC 10-307] analyzing entity top
 INFO: [VRFC 10-163] Analyzing VHDL file "D:/imt/vhdl-imt/game_v1/game_v1.srcs/sim_1/new/tb_top.vhd" into library xil_defaultlib

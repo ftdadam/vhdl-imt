@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2016.1 (win64) Build 1538259 Fri Apr  8 15:45:27 MDT 2016
-| Date         : Wed May 30 11:42:07 2018
+| Date         : Thu May 31 12:48:31 2018
 | Host         : DESKTOP-8T38IV2 running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_drc_routed.rpt -pb top_drc_routed.pb
 | Design       : top
@@ -23,7 +23,7 @@ Table of Contents
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 37
+             Violations found: 40
 
 2. REPORT DETAILS
 -----------------
@@ -107,17 +107,17 @@ Related violations: <none>
 
 PDRC-153#14 Warning
 Gated clock check  
-Net u_game_controller/lane_generator/shift_reg_reg[8]_LDC_i_1__0_n_0 is a gated clock net sourced by a combinational pin u_game_controller/lane_generator/shift_reg_reg[8]_LDC_i_1__0/O, cell u_game_controller/lane_generator/shift_reg_reg[8]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net u_game_controller/lane_generator/shift_reg_reg[7]_LDC_i_1__0_n_0 is a gated clock net sourced by a combinational pin u_game_controller/lane_generator/shift_reg_reg[7]_LDC_i_1__0/O, cell u_game_controller/lane_generator/shift_reg_reg[7]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#15 Warning
 Gated clock check  
-Net u_game_controller/lane_generator/shift_reg_reg[9]_LDC_i_1__0_n_0 is a gated clock net sourced by a combinational pin u_game_controller/lane_generator/shift_reg_reg[9]_LDC_i_1__0/O, cell u_game_controller/lane_generator/shift_reg_reg[9]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net u_game_controller/lane_generator/shift_reg_reg[8]_LDC_i_1__0_n_0 is a gated clock net sourced by a combinational pin u_game_controller/lane_generator/shift_reg_reg[8]_LDC_i_1__0/O, cell u_game_controller/lane_generator/shift_reg_reg[8]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#16 Warning
 Gated clock check  
-Net u_game_controller/object_generator/shift_reg_reg[0]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin u_game_controller/object_generator/shift_reg_reg[0]_LDC_i_1/O, cell u_game_controller/object_generator/shift_reg_reg[0]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net u_game_controller/lane_generator/shift_reg_reg[9]_LDC_i_1__0_n_0 is a gated clock net sourced by a combinational pin u_game_controller/lane_generator/shift_reg_reg[9]_LDC_i_1__0/O, cell u_game_controller/lane_generator/shift_reg_reg[9]_LDC_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#17 Warning
@@ -152,17 +152,17 @@ Related violations: <none>
 
 PDRC-153#23 Warning
 Gated clock check  
-Net u_game_controller/object_generator/shift_reg_reg[14]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin u_game_controller/object_generator/shift_reg_reg[14]_LDC_i_1/O, cell u_game_controller/object_generator/shift_reg_reg[14]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net u_game_controller/object_generator/shift_reg_reg[1]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin u_game_controller/object_generator/shift_reg_reg[1]_LDC_i_1/O, cell u_game_controller/object_generator/shift_reg_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#24 Warning
 Gated clock check  
-Net u_game_controller/object_generator/shift_reg_reg[1]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin u_game_controller/object_generator/shift_reg_reg[1]_LDC_i_1/O, cell u_game_controller/object_generator/shift_reg_reg[1]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net u_game_controller/object_generator/shift_reg_reg[2]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin u_game_controller/object_generator/shift_reg_reg[2]_LDC_i_1/O, cell u_game_controller/object_generator/shift_reg_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#25 Warning
 Gated clock check  
-Net u_game_controller/object_generator/shift_reg_reg[2]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin u_game_controller/object_generator/shift_reg_reg[2]_LDC_i_1/O, cell u_game_controller/object_generator/shift_reg_reg[2]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net u_game_controller/object_generator/shift_reg_reg[3]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin u_game_controller/object_generator/shift_reg_reg[3]_LDC_i_1/O, cell u_game_controller/object_generator/shift_reg_reg[3]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#26 Warning
@@ -177,7 +177,7 @@ Related violations: <none>
 
 PDRC-153#28 Warning
 Gated clock check  
-Net u_game_controller/object_generator/shift_reg_reg[5]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin u_game_controller/object_generator/shift_reg_reg[5]_LDC_i_1/O, cell u_game_controller/object_generator/shift_reg_reg[5]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net u_game_controller/object_generator/shift_reg_reg[4]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin u_game_controller/object_generator/shift_reg_reg[4]_LDC_i_1/O, cell u_game_controller/object_generator/shift_reg_reg[4]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#29 Warning
@@ -202,12 +202,22 @@ Related violations: <none>
 
 PDRC-153#33 Warning
 Gated clock check  
-Net u_game_controller/object_generator/shift_reg_reg[9]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin u_game_controller/object_generator/shift_reg_reg[9]_LDC_i_1/O, cell u_game_controller/object_generator/shift_reg_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net u_game_controller/object_generator/shift_reg_reg[8]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin u_game_controller/object_generator/shift_reg_reg[8]_LDC_i_1/O, cell u_game_controller/object_generator/shift_reg_reg[8]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#34 Warning
 Gated clock check  
+Net u_game_controller/object_generator/shift_reg_reg[9]_LDC_i_1_n_0 is a gated clock net sourced by a combinational pin u_game_controller/object_generator/shift_reg_reg[9]_LDC_i_1/O, cell u_game_controller/object_generator/shift_reg_reg[9]_LDC_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#35 Warning
+Gated clock check  
 Net u_player_tick_gen/CLK is a gated clock net sourced by a combinational pin u_player_tick_gen/player_vect[7]_i_3/O, cell u_player_tick_gen/player_vect[7]_i_3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#36 Warning
+Gated clock check  
+Net u_tick_gen_displays/CLK is a gated clock net sourced by a combinational pin u_tick_gen_displays/sel_display[1]_i_2/O, cell u_tick_gen_displays/sel_display[1]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
@@ -218,6 +228,14 @@ A LUT u_player_tick_gen/player_vect[7]_i_3 is driving clock pin of 8 cells. This
     u_game_controller/player/player_vect_reg[2] {FDCE}
     u_game_controller/player/player_vect_reg[3] {FDCE}
     u_game_controller/player/player_vect_reg[4] {FDPE}
+
+Related violations: <none>
+
+PLHOLDVIO-2#2 Warning
+Non-Optimal connections which could lead to hold violations  
+A LUT u_tick_gen_displays/sel_display[1]_i_2 is driving clock pin of 2 cells. This could lead to large hold time violations. First few involved cells are:
+    u_tdm_displays/sel_display_reg[0] {FDCE}
+    u_tdm_displays/sel_display_reg[1] {FDCE}
 
 Related violations: <none>
 

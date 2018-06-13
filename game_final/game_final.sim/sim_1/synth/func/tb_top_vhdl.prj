@@ -1,0 +1,5 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../game_final.srcs/sim_1/imports/new/tb_top.vhd"
+
+# Do not sort compile order
+nosort
